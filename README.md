@@ -17,13 +17,6 @@ SkillScope AI aims to develop and evaluate a role-aware Retrieval-Augmented Gene
 | s4188617 | Yaswanth Gunta | Streamlit application, employee/director/HR views, learning recommendation presentation, usability testing, stakeholder experience evaluation |
 | s4140797 | Satyajit Seetharaman Kavitha | BM25 and embedding retrieval, vector database, metadata filtering, reranking, Ollama/LLM integration, backend implementation, retrieval optimisation |
 
-## User Stories
-
-- **As a technical employee, I want to complete a role-specific knowledge assessment so that I can identify the technical areas in which I need further development.**
-- **As a technical employee, I want to receive personalised learning recommendations based on my identified knowledge gaps so that I can focus my learning on the most relevant technical topics.**
-- **As a technical director or team lead, I want to view evidence-linked competency results so that I can understand employee development needs and prioritise suitable training.**
-- **As an HR or Learning and Development stakeholder, I want to view an approved summary of employee knowledge gaps so that I can plan targeted training programs without needing to interpret detailed technical assessment responses.**
-
 ## Initial Technical Roles
 
 1. Backend Engineering
@@ -69,9 +62,7 @@ Milestone 1: project scope, stakeholders, competency areas, knowledge-base plan,
 
 ## Trello
 
-Add the teaching-team-accessible Trello board link here.
+(https://trello.com/invite/6a89913cfe102b871210b4a4/ATTI55e7b285c9c1b65e9a3b48492375554bAF53A3E1)
 
-## GitHub Access
 
-This repository is intended to remain **private**. Access should be granted to the assigned mentor/teaching team when requested.
 # Group-83
