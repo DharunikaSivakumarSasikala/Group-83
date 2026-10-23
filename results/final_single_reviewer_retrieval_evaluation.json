@@ -1,0 +1,387 @@
+{
+  "evaluation_design": {
+    "review_type": "single_human_reviewer",
+    "reviewer_count": 1,
+    "original_review_cases": 30,
+    "approved_cases_used_for_evaluation": 21,
+    "excluded_cases": 9,
+    "approved_cases_by_role": {
+      "backend_software_engineer": 6,
+      "data_engineer": 5,
+      "devops_sre_engineer": 5,
+      "frontend_ui_developer": 1,
+      "qa_test_engineer": 4
+    },
+    "limitation": "A second independent reviewer was not available. Therefore inter-rater agreement and Cohen's kappa were not measured. Results should be described as single-reviewer human validation."
+  },
+  "overall_metrics": {
+    "TF-IDF": {
+      "cases": 21,
+      "hit_at_1": 0.2857142857142857,
+      "hit_at_3": 0.3333333333333333,
+      "hit_at_5": 0.42857142857142855,
+      "mrr_at_5": 0.32301587301587303,
+      "miss_rate_at_5": 0.5714285714285714,
+      "misses_at_5": 12
+    },
+    "Embedding": {
+      "cases": 21,
+      "hit_at_1": 0.47619047619047616,
+      "hit_at_3": 0.9047619047619048,
+      "hit_at_5": 0.9523809523809523,
+      "mrr_at_5": 0.6706349206349207,
+      "miss_rate_at_5": 0.047619047619047616,
+      "misses_at_5": 1
+    },
+    "Hybrid_75T_25E": {
+      "cases": 21,
+      "hit_at_1": 0.2857142857142857,
+      "hit_at_3": 0.38095238095238093,
+      "hit_at_5": 0.5238095238095238,
+      "mrr_at_5": 0.35873015873015873,
+      "miss_rate_at_5": 0.47619047619047616,
+      "misses_at_5": 10
+    },
+    "Hybrid_50T_50E": {
+      "cases": 21,
+      "hit_at_1": 0.3333333333333333,
+      "hit_at_3": 0.5238095238095238,
+      "hit_at_5": 0.6666666666666666,
+      "mrr_at_5": 0.4484126984126984,
+      "miss_rate_at_5": 0.3333333333333333,
+      "misses_at_5": 7
+    },
+    "Hybrid_25T_75E": {
+      "cases": 21,
+      "hit_at_1": 0.5238095238095238,
+      "hit_at_3": 0.7619047619047619,
+      "hit_at_5": 0.9047619047619048,
+      "mrr_at_5": 0.6476190476190476,
+      "miss_rate_at_5": 0.09523809523809523,
+      "misses_at_5": 2
+    }
+  },
+  "metrics_by_role": {
+    "backend_software_engineer": {
+      "TF-IDF": {
+        "cases": 6,
+        "hit_at_1": 0.8333333333333334,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.8333333333333334,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 1
+      },
+      "Embedding": {
+        "cases": 6,
+        "hit_at_1": 0.6666666666666666,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.7777777777777778,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 6,
+        "hit_at_1": 0.8333333333333334,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.8333333333333334,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 1
+      },
+      "Hybrid_50T_50E": {
+        "cases": 6,
+        "hit_at_1": 0.8333333333333334,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.8333333333333334,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 1
+      },
+      "Hybrid_25T_75E": {
+        "cases": 6,
+        "hit_at_1": 0.8333333333333334,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.8333333333333334,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 1
+      }
+    },
+    "data_engineer": {
+      "TF-IDF": {
+        "cases": 5,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr_at_5": 0.0,
+        "miss_rate_at_5": 1.0,
+        "misses_at_5": 5
+      },
+      "Embedding": {
+        "cases": 5,
+        "hit_at_1": 0.6,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.7666666666666667,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 5,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.2,
+        "mrr_at_5": 0.04,
+        "miss_rate_at_5": 0.8,
+        "misses_at_5": 4
+      },
+      "Hybrid_50T_50E": {
+        "cases": 5,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.4,
+        "hit_at_5": 0.6,
+        "mrr_at_5": 0.21666666666666665,
+        "miss_rate_at_5": 0.4,
+        "misses_at_5": 2
+      },
+      "Hybrid_25T_75E": {
+        "cases": 5,
+        "hit_at_1": 0.4,
+        "hit_at_3": 0.8,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.5733333333333334,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    },
+    "devops_sre_engineer": {
+      "TF-IDF": {
+        "cases": 5,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.2,
+        "hit_at_5": 0.6,
+        "mrr_at_5": 0.15666666666666668,
+        "miss_rate_at_5": 0.4,
+        "misses_at_5": 2
+      },
+      "Embedding": {
+        "cases": 5,
+        "hit_at_1": 0.2,
+        "hit_at_3": 0.8,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.5166666666666667,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 5,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.4,
+        "hit_at_5": 0.6,
+        "mrr_at_5": 0.21666666666666665,
+        "miss_rate_at_5": 0.4,
+        "misses_at_5": 2
+      },
+      "Hybrid_50T_50E": {
+        "cases": 5,
+        "hit_at_1": 0.2,
+        "hit_at_3": 0.6,
+        "hit_at_5": 0.8,
+        "mrr_at_5": 0.4166666666666667,
+        "miss_rate_at_5": 0.2,
+        "misses_at_5": 1
+      },
+      "Hybrid_25T_75E": {
+        "cases": 5,
+        "hit_at_1": 0.4,
+        "hit_at_3": 0.8,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.6066666666666667,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    },
+    "frontend_ui_developer": {
+      "TF-IDF": {
+        "cases": 1,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr_at_5": 0.0,
+        "miss_rate_at_5": 1.0,
+        "misses_at_5": 1
+      },
+      "Embedding": {
+        "cases": 1,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr_at_5": 0.0,
+        "miss_rate_at_5": 1.0,
+        "misses_at_5": 1
+      },
+      "Hybrid_75T_25E": {
+        "cases": 1,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr_at_5": 0.0,
+        "miss_rate_at_5": 1.0,
+        "misses_at_5": 1
+      },
+      "Hybrid_50T_50E": {
+        "cases": 1,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr_at_5": 0.0,
+        "miss_rate_at_5": 1.0,
+        "misses_at_5": 1
+      },
+      "Hybrid_25T_75E": {
+        "cases": 1,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr_at_5": 0.0,
+        "miss_rate_at_5": 1.0,
+        "misses_at_5": 1
+      }
+    },
+    "qa_test_engineer": {
+      "TF-IDF": {
+        "cases": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.25,
+        "mrr_at_5": 0.25,
+        "miss_rate_at_5": 0.75,
+        "misses_at_5": 3
+      },
+      "Embedding": {
+        "cases": 4,
+        "hit_at_1": 0.5,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.75,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.3125,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 2
+      },
+      "Hybrid_50T_50E": {
+        "cases": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.3125,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 2
+      },
+      "Hybrid_25T_75E": {
+        "cases": 4,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.75,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.675,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    }
+  },
+  "changes_vs_tfidf": {
+    "Embedding": {
+      "hit_at_1_percentage_point_change_vs_tfidf": 19.047619047619047,
+      "hit_at_3_percentage_point_change_vs_tfidf": 57.14285714285714,
+      "hit_at_5_percentage_point_change_vs_tfidf": 52.38095238095237,
+      "mrr_at_5_change_vs_tfidf": 0.34761904761904766,
+      "top5_miss_reduction_count_vs_tfidf": 11
+    },
+    "Hybrid_75T_25E": {
+      "hit_at_1_percentage_point_change_vs_tfidf": 0.0,
+      "hit_at_3_percentage_point_change_vs_tfidf": 4.761904761904762,
+      "hit_at_5_percentage_point_change_vs_tfidf": 9.523809523809529,
+      "mrr_at_5_change_vs_tfidf": 0.0357142857142857,
+      "top5_miss_reduction_count_vs_tfidf": 2
+    },
+    "Hybrid_50T_50E": {
+      "hit_at_1_percentage_point_change_vs_tfidf": 4.761904761904762,
+      "hit_at_3_percentage_point_change_vs_tfidf": 19.04761904761905,
+      "hit_at_5_percentage_point_change_vs_tfidf": 23.809523809523807,
+      "mrr_at_5_change_vs_tfidf": 0.12539682539682534,
+      "top5_miss_reduction_count_vs_tfidf": 5
+    },
+    "Hybrid_25T_75E": {
+      "hit_at_1_percentage_point_change_vs_tfidf": 23.809523809523814,
+      "hit_at_3_percentage_point_change_vs_tfidf": 42.857142857142854,
+      "hit_at_5_percentage_point_change_vs_tfidf": 47.61904761904762,
+      "mrr_at_5_change_vs_tfidf": 0.3246031746031746,
+      "top5_miss_reduction_count_vs_tfidf": 10
+    }
+  },
+  "excluded_cases": [
+    {
+      "case_id": "HARD_DATA_017",
+      "role": "data_engineer",
+      "skill": "Series and episode mapping",
+      "reason": "Too much drift: loses stable identifiers and explicit season/episode relationships and reframes the problem as broadcast ordering."
+    },
+    {
+      "case_id": "HARD_DEVO_010",
+      "role": "devops_sre_engineer",
+      "skill": "Compose diagnosis",
+      "reason": "Too vague: generic live-application troubleshooting could match many topics and omits Compose/service-state/log/exec context."
+    },
+    {
+      "case_id": "HARD_FRON_004",
+      "role": "frontend_ui_developer",
+      "skill": "Keyboard access",
+      "reason": "Too broad: replaces keyboard accessibility, visible focus, and logical keyboard navigation with generic input-device control."
+    },
+    {
+      "case_id": "HARD_FRON_009",
+      "role": "frontend_ui_developer",
+      "skill": "Focus order",
+      "reason": "Too vague: does not clearly preserve focusable-component focus order."
+    },
+    {
+      "case_id": "HARD_FRON_011",
+      "role": "frontend_ui_developer",
+      "skill": "CSS accessibility",
+      "reason": "Over-generalized: omits the specific focus-indicator and colour-only information requirements."
+    },
+    {
+      "case_id": "HARD_FRON_014",
+      "role": "frontend_ui_developer",
+      "skill": "Plain language",
+      "reason": "Broadens to learning styles and navigation and loses the specific plain-language/link-text/instruction concept."
+    },
+    {
+      "case_id": "HARD_FRON_016",
+      "role": "frontend_ui_developer",
+      "skill": "Accessible video controls",
+      "reason": "Too vague: loses the OTT player-control context and the specific accessible-name, keyboard, and visible-focus requirements."
+    },
+    {
+      "case_id": "HARD_QA_T_010",
+      "role": "qa_test_engineer",
+      "skill": "Fixture teardown",
+      "reason": "Too vague: asks generally about assets after a test and loses yield-fixture cleanup and failure-handling meaning."
+    },
+    {
+      "case_id": "HARD_QA_T_019",
+      "role": "qa_test_engineer",
+      "skill": "Caption and audio testing",
+      "reason": "Too vague: loses the specific requirements for audio/subtitle/caption presence, labels, selection, and synchronization."
+    }
+  ]
+}

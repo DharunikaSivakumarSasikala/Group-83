@@ -1,0 +1,30 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Local environment/secrets
+.env
+.env.*
+*.log
+
+# Generated embedding cache
+results/embedding_cache/
+
+# Local coverage/test caches
+.coverage
+.pytest_cache/
+.mypy_cache/

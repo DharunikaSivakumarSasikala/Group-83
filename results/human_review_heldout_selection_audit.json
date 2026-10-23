@@ -1,0 +1,548 @@
+{
+  "selection_method": "30 balanced cases (6 per role), prioritising TF-IDF misses recovered by embedding, then larger embedding rank gains and low lexical overlap.",
+  "reviewer_blinding": "Retriever ranks are intentionally excluded from the CSV.",
+  "case_count": 30,
+  "cases_per_role": 6,
+  "cases": [
+    {
+      "case_id": "HARD_BACK_015",
+      "role": "backend_software_engineer",
+      "skill": "API security testing",
+      "source_chunk_id": "BACK_015",
+      "content_word_overlap": 0.14285714285714285,
+      "tfidf_rank": 1,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 1,
+      "hybrid_50T_50E_rank": 1,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        0,
+        0,
+        -0.14285714285714285,
+        1
+      ]
+    },
+    {
+      "case_id": "HARD_BACK_019",
+      "role": "backend_software_engineer",
+      "skill": "C integer safety",
+      "source_chunk_id": "BACK_019",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 25,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 10,
+      "hybrid_50T_50E_rank": 8,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        1,
+        24,
+        -0.0,
+        25
+      ]
+    },
+    {
+      "case_id": "HARD_BACK_022",
+      "role": "backend_software_engineer",
+      "skill": "C++ ownership",
+      "source_chunk_id": "BACK_022",
+      "content_word_overlap": 0.07692307692307693,
+      "tfidf_rank": 29,
+      "embedding_rank": 3,
+      "hybrid_75T_25E_rank": 14,
+      "hybrid_50T_50E_rank": 7,
+      "hybrid_25T_75E_rank": 6,
+      "selection_score": [
+        1,
+        26,
+        -0.07692307692307693,
+        29
+      ]
+    },
+    {
+      "case_id": "HARD_BACK_026",
+      "role": "backend_software_engineer",
+      "skill": "Python data structures",
+      "source_chunk_id": "BACK_026",
+      "content_word_overlap": 0.13333333333333333,
+      "tfidf_rank": 1,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 1,
+      "hybrid_50T_50E_rank": 1,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        0,
+        0,
+        -0.13333333333333333,
+        1
+      ]
+    },
+    {
+      "case_id": "HARD_BACK_033",
+      "role": "backend_software_engineer",
+      "skill": "Go interfaces",
+      "source_chunk_id": "BACK_033",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 35,
+      "embedding_rank": 23,
+      "hybrid_75T_25E_rank": 25,
+      "hybrid_50T_50E_rank": 25,
+      "hybrid_25T_75E_rank": 25,
+      "selection_score": [
+        0,
+        12,
+        -0.0,
+        35
+      ]
+    },
+    {
+      "case_id": "HARD_BACK_040",
+      "role": "backend_software_engineer",
+      "skill": "Playback session resilience",
+      "source_chunk_id": "BACK_040",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 40,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 13,
+      "hybrid_50T_50E_rank": 4,
+      "hybrid_25T_75E_rank": 3,
+      "selection_score": [
+        1,
+        38,
+        -0.0,
+        40
+      ]
+    },
+    {
+      "case_id": "HARD_DATA_001",
+      "role": "data_engineer",
+      "skill": "DAG concept",
+      "source_chunk_id": "DATA_001",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 10,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 10,
+      "hybrid_50T_50E_rank": 6,
+      "hybrid_25T_75E_rank": 3,
+      "selection_score": [
+        1,
+        8,
+        -0.0,
+        10
+      ]
+    },
+    {
+      "case_id": "HARD_DATA_006",
+      "role": "data_engineer",
+      "skill": "Scheduling",
+      "source_chunk_id": "DATA_006",
+      "content_word_overlap": 0.06666666666666667,
+      "tfidf_rank": 11,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 6,
+      "hybrid_50T_50E_rank": 4,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        1,
+        10,
+        -0.06666666666666667,
+        11
+      ]
+    },
+    {
+      "case_id": "HARD_DATA_010",
+      "role": "data_engineer",
+      "skill": "Database access",
+      "source_chunk_id": "DATA_010",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 13,
+      "embedding_rank": 3,
+      "hybrid_75T_25E_rank": 11,
+      "hybrid_50T_50E_rank": 7,
+      "hybrid_25T_75E_rank": 5,
+      "selection_score": [
+        1,
+        10,
+        -0.0,
+        13
+      ]
+    },
+    {
+      "case_id": "HARD_DATA_015",
+      "role": "data_engineer",
+      "skill": "Pipeline alerts",
+      "source_chunk_id": "DATA_015",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 16,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 9,
+      "hybrid_50T_50E_rank": 3,
+      "hybrid_25T_75E_rank": 3,
+      "selection_score": [
+        1,
+        15,
+        -0.0,
+        16
+      ]
+    },
+    {
+      "case_id": "HARD_DATA_017",
+      "role": "data_engineer",
+      "skill": "Series and episode mapping",
+      "source_chunk_id": "DATA_017",
+      "content_word_overlap": 0.06666666666666667,
+      "tfidf_rank": 9,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 6,
+      "hybrid_50T_50E_rank": 3,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        1,
+        8,
+        -0.06666666666666667,
+        9
+      ]
+    },
+    {
+      "case_id": "HARD_DATA_020",
+      "role": "data_engineer",
+      "skill": "Metadata migration reconciliation",
+      "source_chunk_id": "DATA_020",
+      "content_word_overlap": 0.058823529411764705,
+      "tfidf_rank": 10,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 5,
+      "hybrid_50T_50E_rank": 2,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        1,
+        9,
+        -0.058823529411764705,
+        10
+      ]
+    },
+    {
+      "case_id": "HARD_DEVO_001",
+      "role": "devops_sre_engineer",
+      "skill": "Deployments",
+      "source_chunk_id": "DEVO_001",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 7,
+      "embedding_rank": 4,
+      "hybrid_75T_25E_rank": 7,
+      "hybrid_50T_50E_rank": 7,
+      "hybrid_25T_75E_rank": 5,
+      "selection_score": [
+        1,
+        3,
+        -0.0,
+        7
+      ]
+    },
+    {
+      "case_id": "HARD_DEVO_004",
+      "role": "devops_sre_engineer",
+      "skill": "ConfigMaps",
+      "source_chunk_id": "DEVO_004",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 8,
+      "embedding_rank": 5,
+      "hybrid_75T_25E_rank": 8,
+      "hybrid_50T_50E_rank": 7,
+      "hybrid_25T_75E_rank": 7,
+      "selection_score": [
+        1,
+        3,
+        -0.0,
+        8
+      ]
+    },
+    {
+      "case_id": "HARD_DEVO_008",
+      "role": "devops_sre_engineer",
+      "skill": "Dockerfile purpose",
+      "source_chunk_id": "DEVO_008",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 10,
+      "embedding_rank": 5,
+      "hybrid_75T_25E_rank": 8,
+      "hybrid_50T_50E_rank": 8,
+      "hybrid_25T_75E_rank": 7,
+      "selection_score": [
+        1,
+        5,
+        -0.0,
+        10
+      ]
+    },
+    {
+      "case_id": "HARD_DEVO_010",
+      "role": "devops_sre_engineer",
+      "skill": "Compose diagnosis",
+      "source_chunk_id": "DEVO_010",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 11,
+      "embedding_rank": 5,
+      "hybrid_75T_25E_rank": 8,
+      "hybrid_50T_50E_rank": 8,
+      "hybrid_25T_75E_rank": 7,
+      "selection_score": [
+        1,
+        6,
+        -0.0,
+        11
+      ]
+    },
+    {
+      "case_id": "HARD_DEVO_013",
+      "role": "devops_sre_engineer",
+      "skill": "Alerting rules",
+      "source_chunk_id": "DEVO_013",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 5,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 3,
+      "hybrid_50T_50E_rank": 3,
+      "hybrid_25T_75E_rank": 2,
+      "selection_score": [
+        0,
+        3,
+        -0.0,
+        5
+      ]
+    },
+    {
+      "case_id": "HARD_DEVO_017",
+      "role": "devops_sre_engineer",
+      "skill": "OTT alert design",
+      "source_chunk_id": "DEVO_017",
+      "content_word_overlap": 0.05,
+      "tfidf_rank": 12,
+      "embedding_rank": 3,
+      "hybrid_75T_25E_rank": 8,
+      "hybrid_50T_50E_rank": 4,
+      "hybrid_25T_75E_rank": 3,
+      "selection_score": [
+        1,
+        9,
+        -0.05,
+        12
+      ]
+    },
+    {
+      "case_id": "HARD_FRON_008",
+      "role": "frontend_ui_developer",
+      "skill": "Contrast",
+      "source_chunk_id": "FRON_008",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 14,
+      "embedding_rank": 4,
+      "hybrid_75T_25E_rank": 10,
+      "hybrid_50T_50E_rank": 6,
+      "hybrid_25T_75E_rank": 5,
+      "selection_score": [
+        1,
+        10,
+        -0.0,
+        14
+      ]
+    },
+    {
+      "case_id": "HARD_FRON_009",
+      "role": "frontend_ui_developer",
+      "skill": "Focus order",
+      "source_chunk_id": "FRON_009",
+      "content_word_overlap": 0.08333333333333333,
+      "tfidf_rank": 6,
+      "embedding_rank": 3,
+      "hybrid_75T_25E_rank": 4,
+      "hybrid_50T_50E_rank": 3,
+      "hybrid_25T_75E_rank": 3,
+      "selection_score": [
+        1,
+        3,
+        -0.08333333333333333,
+        6
+      ]
+    },
+    {
+      "case_id": "HARD_FRON_011",
+      "role": "frontend_ui_developer",
+      "skill": "CSS accessibility",
+      "source_chunk_id": "FRON_011",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 13,
+      "embedding_rank": 5,
+      "hybrid_75T_25E_rank": 9,
+      "hybrid_50T_50E_rank": 5,
+      "hybrid_25T_75E_rank": 5,
+      "selection_score": [
+        1,
+        8,
+        -0.0,
+        13
+      ]
+    },
+    {
+      "case_id": "HARD_FRON_014",
+      "role": "frontend_ui_developer",
+      "skill": "Plain language",
+      "source_chunk_id": "FRON_014",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 15,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 9,
+      "hybrid_50T_50E_rank": 8,
+      "hybrid_25T_75E_rank": 5,
+      "selection_score": [
+        1,
+        13,
+        -0.0,
+        15
+      ]
+    },
+    {
+      "case_id": "HARD_FRON_016",
+      "role": "frontend_ui_developer",
+      "skill": "Accessible video controls",
+      "source_chunk_id": "FRON_016",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 17,
+      "embedding_rank": 10,
+      "hybrid_75T_25E_rank": 11,
+      "hybrid_50T_50E_rank": 11,
+      "hybrid_25T_75E_rank": 10,
+      "selection_score": [
+        0,
+        7,
+        -0.0,
+        17
+      ]
+    },
+    {
+      "case_id": "HARD_FRON_019",
+      "role": "frontend_ui_developer",
+      "skill": "Responsive OTT player",
+      "source_chunk_id": "FRON_019",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 19,
+      "embedding_rank": 13,
+      "hybrid_75T_25E_rank": 14,
+      "hybrid_50T_50E_rank": 13,
+      "hybrid_25T_75E_rank": 13,
+      "selection_score": [
+        0,
+        6,
+        -0.0,
+        19
+      ]
+    },
+    {
+      "case_id": "HARD_QA_T_006",
+      "role": "qa_test_engineer",
+      "skill": "API testing",
+      "source_chunk_id": "QA_T_006",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 8,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 4,
+      "hybrid_50T_50E_rank": 4,
+      "hybrid_25T_75E_rank": 1,
+      "selection_score": [
+        1,
+        7,
+        -0.0,
+        8
+      ]
+    },
+    {
+      "case_id": "HARD_QA_T_008",
+      "role": "qa_test_engineer",
+      "skill": "Fixtures",
+      "source_chunk_id": "QA_T_008",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 14,
+      "embedding_rank": 1,
+      "hybrid_75T_25E_rank": 10,
+      "hybrid_50T_50E_rank": 7,
+      "hybrid_25T_75E_rank": 2,
+      "selection_score": [
+        1,
+        13,
+        -0.0,
+        14
+      ]
+    },
+    {
+      "case_id": "HARD_QA_T_010",
+      "role": "qa_test_engineer",
+      "skill": "Fixture teardown",
+      "source_chunk_id": "QA_T_010",
+      "content_word_overlap": 0.1,
+      "tfidf_rank": 6,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 6,
+      "hybrid_50T_50E_rank": 3,
+      "hybrid_25T_75E_rank": 2,
+      "selection_score": [
+        1,
+        4,
+        -0.1,
+        6
+      ]
+    },
+    {
+      "case_id": "HARD_QA_T_014",
+      "role": "qa_test_engineer",
+      "skill": "Flaky tests",
+      "source_chunk_id": "QA_T_014",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 15,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 9,
+      "hybrid_50T_50E_rank": 9,
+      "hybrid_25T_75E_rank": 5,
+      "selection_score": [
+        1,
+        13,
+        -0.0,
+        15
+      ]
+    },
+    {
+      "case_id": "HARD_QA_T_019",
+      "role": "qa_test_engineer",
+      "skill": "Caption and audio testing",
+      "source_chunk_id": "QA_T_019",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 20,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 5,
+      "hybrid_50T_50E_rank": 5,
+      "hybrid_25T_75E_rank": 4,
+      "selection_score": [
+        1,
+        18,
+        -0.0,
+        20
+      ]
+    },
+    {
+      "case_id": "HARD_QA_T_021",
+      "role": "qa_test_engineer",
+      "skill": "OTT device matrix",
+      "source_chunk_id": "QA_T_021",
+      "content_word_overlap": 0.0,
+      "tfidf_rank": 21,
+      "embedding_rank": 2,
+      "hybrid_75T_25E_rank": 2,
+      "hybrid_50T_50E_rank": 2,
+      "hybrid_25T_75E_rank": 2,
+      "selection_score": [
+        1,
+        19,
+        -0.0,
+        21
+      ]
+    }
+  ]
+}

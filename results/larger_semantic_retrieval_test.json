@@ -1,0 +1,3857 @@
+{
+  "experiment": {
+    "knowledge_chunks": 120,
+    "semantic_cases": 60,
+    "cases_per_role": 12,
+    "top_k": 5,
+    "embedding_model": "nomic-embed-text",
+    "query_generator": "llama3.2:3b",
+    "query_generator_temperature": 0,
+    "hybrid_weights": {
+      "Hybrid_75T_25E": {
+        "tfidf": 0.75,
+        "embedding": 0.25
+      },
+      "Hybrid_50T_50E": {
+        "tfidf": 0.5,
+        "embedding": 0.5
+      },
+      "Hybrid_25T_75E": {
+        "tfidf": 0.25,
+        "embedding": 0.75
+      }
+    }
+  },
+  "metrics": {
+    "TF-IDF": {
+      "cases": 60,
+      "hit_at_1": 0.9833333333333333,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 0.9916666666666667,
+      "miss_rate_at_5": 0.0,
+      "misses_at_5": 0
+    },
+    "Embedding": {
+      "cases": 60,
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0,
+      "miss_rate_at_5": 0.0,
+      "misses_at_5": 0
+    },
+    "Hybrid_75T_25E": {
+      "cases": 60,
+      "hit_at_1": 0.9833333333333333,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 0.9916666666666667,
+      "miss_rate_at_5": 0.0,
+      "misses_at_5": 0
+    },
+    "Hybrid_50T_50E": {
+      "cases": 60,
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0,
+      "miss_rate_at_5": 0.0,
+      "misses_at_5": 0
+    },
+    "Hybrid_25T_75E": {
+      "cases": 60,
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0,
+      "miss_rate_at_5": 0.0,
+      "misses_at_5": 0
+    }
+  },
+  "metrics_by_role": {
+    "backend_software_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    },
+    "data_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    },
+    "devops_sre_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    },
+    "frontend_ui_developer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 0.9166666666666666,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.9583333333333334,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 0.9166666666666666,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.9583333333333334,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    },
+    "qa_test_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 1.0,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    }
+  },
+  "timing_seconds": {
+    "tfidf_index_build": 0.45762870903126895,
+    "embedding_document_index": 28.398298499872908,
+    "tfidf_all_queries": 0.05026691616512835,
+    "embedding_all_queries": 0.6666718330234289
+  },
+  "cases": [
+    {
+      "case_id": "SEM_BACK_001",
+      "role": "backend_software_engineer",
+      "skill": "API fundamentals",
+      "expected_chunk_id": "BACK_001",
+      "query": "Can you explain how OpenAPI allows developers to describe the structure and behavior of an HTTP API in a way that's easily understandable by both humans and automated tools?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_002",
+            "BACK_005",
+            "BACK_003",
+            "BACK_004"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_002",
+            "BACK_004",
+            "BACK_003",
+            "BACK_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_002",
+            "BACK_005",
+            "BACK_003",
+            "BACK_004"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_002",
+            "BACK_004",
+            "BACK_003",
+            "BACK_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_002",
+            "BACK_004",
+            "BACK_003",
+            "BACK_005"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_005",
+      "role": "backend_software_engineer",
+      "skill": "API contracts",
+      "expected_chunk_id": "BACK_005",
+      "query": "Can you explain how a versioned API contract helps ensure that the API's behavior is consistent and predictable across different versions?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_009",
+            "BACK_020",
+            "BACK_003",
+            "BACK_036"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_003",
+            "BACK_010",
+            "BACK_009",
+            "BACK_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_009",
+            "BACK_003",
+            "BACK_036",
+            "BACK_010"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_009",
+            "BACK_003",
+            "BACK_010",
+            "BACK_036"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_003",
+            "BACK_009",
+            "BACK_010",
+            "BACK_036"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_008",
+      "role": "backend_software_engineer",
+      "skill": "Input and resource controls",
+      "expected_chunk_id": "BACK_008",
+      "query": "Can you explain why APIs need to limit the amount of resources they use, and how this helps prevent issues with excessive CPU, memory, or storage usage?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_020",
+            "BACK_016",
+            "BACK_021",
+            "BACK_028"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_010",
+            "BACK_009",
+            "BACK_015",
+            "BACK_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_020",
+            "BACK_010",
+            "BACK_001",
+            "BACK_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_010",
+            "BACK_020",
+            "BACK_009",
+            "BACK_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_010",
+            "BACK_009",
+            "BACK_001",
+            "BACK_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_012",
+      "role": "backend_software_engineer",
+      "skill": "Dockerfile layers",
+      "expected_chunk_id": "BACK_012",
+      "query": "Can you explain why it's recommended to place stable dependency steps before frequently changing application source in a Dockerfile to improve rebuild efficiency?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_011",
+            "BACK_040",
+            "BACK_010",
+            "BACK_014"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_011",
+            "BACK_014",
+            "BACK_013",
+            "BACK_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_011",
+            "BACK_014",
+            "BACK_040",
+            "BACK_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_011",
+            "BACK_014",
+            "BACK_013",
+            "BACK_040"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_011",
+            "BACK_014",
+            "BACK_013",
+            "BACK_040"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_015",
+      "role": "backend_software_engineer",
+      "skill": "API security testing",
+      "expected_chunk_id": "BACK_015",
+      "query": "Can you explain how security testing should focus on verifying the proper authorization and authentication for specific API endpoints and sequences of requests?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_004",
+            "BACK_006",
+            "BACK_007",
+            "BACK_037"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_004",
+            "BACK_007",
+            "BACK_010",
+            "BACK_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_004",
+            "BACK_006",
+            "BACK_007",
+            "BACK_037"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_004",
+            "BACK_007",
+            "BACK_006",
+            "BACK_037"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_004",
+            "BACK_007",
+            "BACK_006",
+            "BACK_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_019",
+      "role": "backend_software_engineer",
+      "skill": "C integer safety",
+      "expected_chunk_id": "BACK_019",
+      "query": "Can you explain why it's a good idea to consider the potential for signed integer overflow when performing arithmetic operations in code?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_001",
+            "BACK_017",
+            "BACK_018",
+            "BACK_004"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_017",
+            "BACK_024",
+            "BACK_018",
+            "BACK_029"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_017",
+            "BACK_001",
+            "BACK_018",
+            "BACK_024"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_017",
+            "BACK_018",
+            "BACK_024",
+            "BACK_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_017",
+            "BACK_018",
+            "BACK_024",
+            "BACK_029"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_022",
+      "role": "backend_software_engineer",
+      "skill": "C++ ownership",
+      "expected_chunk_id": "BACK_022",
+      "query": "Can you explain why it's recommended to use scoped objects and standard smart pointers instead of raw owning pointers in modern C++?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_022",
+            "BACK_017",
+            "BACK_024",
+            "BACK_025",
+            "BACK_029"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_022",
+            "BACK_017",
+            "BACK_024",
+            "BACK_025",
+            "BACK_023"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_022",
+            "BACK_017",
+            "BACK_024",
+            "BACK_025",
+            "BACK_029"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_022",
+            "BACK_017",
+            "BACK_024",
+            "BACK_025",
+            "BACK_023"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_022",
+            "BACK_017",
+            "BACK_024",
+            "BACK_025",
+            "BACK_023"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_026",
+      "role": "backend_software_engineer",
+      "skill": "Python data structures",
+      "expected_chunk_id": "BACK_026",
+      "query": "What are the key characteristics of Python's data structures that help determine which one to use for a specific application?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_027",
+            "BACK_014",
+            "BACK_010",
+            "BACK_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_029",
+            "BACK_030",
+            "BACK_027",
+            "BACK_028"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_027",
+            "BACK_014",
+            "BACK_029",
+            "BACK_030"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_027",
+            "BACK_029",
+            "BACK_030",
+            "BACK_028"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_029",
+            "BACK_030",
+            "BACK_027",
+            "BACK_028"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_029",
+      "role": "backend_software_engineer",
+      "skill": "Python mutability",
+      "expected_chunk_id": "BACK_029",
+      "query": "What are some strategies for identifying and avoiding the use of mutable objects in Python code to prevent unintended behavior?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_029",
+            "BACK_001",
+            "BACK_027",
+            "BACK_025",
+            "BACK_026"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_029",
+            "BACK_027",
+            "BACK_026",
+            "BACK_028",
+            "BACK_030"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_029",
+            "BACK_027",
+            "BACK_026",
+            "BACK_001",
+            "BACK_025"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_029",
+            "BACK_027",
+            "BACK_026",
+            "BACK_028",
+            "BACK_030"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_029",
+            "BACK_027",
+            "BACK_026",
+            "BACK_028",
+            "BACK_030"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_033",
+      "role": "backend_software_engineer",
+      "skill": "Go interfaces",
+      "expected_chunk_id": "BACK_033",
+      "query": "Can you explain how a Go type automatically meets the requirements of an interface when it implements its methods?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_033",
+            "BACK_004",
+            "BACK_024",
+            "BACK_017",
+            "BACK_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_033",
+            "BACK_031",
+            "BACK_035",
+            "BACK_034",
+            "BACK_023"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_033",
+            "BACK_004",
+            "BACK_024",
+            "BACK_017",
+            "BACK_002"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_033",
+            "BACK_031",
+            "BACK_004",
+            "BACK_035",
+            "BACK_034"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_033",
+            "BACK_031",
+            "BACK_035",
+            "BACK_034",
+            "BACK_004"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_036",
+      "role": "backend_software_engineer",
+      "skill": "OTT playback API design",
+      "expected_chunk_id": "BACK_036",
+      "query": "Can you explain how the OTT playback API should balance providing necessary information to the client with hiding internal implementation details?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_023",
+            "BACK_001",
+            "BACK_027",
+            "BACK_037"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_010",
+            "BACK_001",
+            "BACK_003",
+            "BACK_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_023",
+            "BACK_001",
+            "BACK_003",
+            "BACK_040"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_023",
+            "BACK_001",
+            "BACK_010",
+            "BACK_003"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_010",
+            "BACK_023",
+            "BACK_001",
+            "BACK_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_BACK_040",
+      "role": "backend_software_engineer",
+      "skill": "Playback session resilience",
+      "expected_chunk_id": "BACK_040",
+      "query": "Can you explain the importance of using stable contracts and meaningful error types in playback session resilience to ensure reliable playback services?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_040",
+            "BACK_036",
+            "BACK_024",
+            "BACK_031",
+            "BACK_037"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_040",
+            "BACK_036",
+            "BACK_037",
+            "BACK_038",
+            "BACK_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_040",
+            "BACK_036",
+            "BACK_024",
+            "BACK_037",
+            "BACK_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_040",
+            "BACK_036",
+            "BACK_037",
+            "BACK_038",
+            "BACK_024"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_040",
+            "BACK_036",
+            "BACK_037",
+            "BACK_038",
+            "BACK_024"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_001",
+      "role": "data_engineer",
+      "skill": "DAG concept",
+      "expected_chunk_id": "DATA_001",
+      "query": "What is the purpose of defining a workflow as a collection of discrete units that are executed by workers in an Airflow DAG?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_001",
+            "DATA_004",
+            "DATA_006",
+            "DATA_003",
+            "DATA_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_001",
+            "DATA_006",
+            "DATA_002",
+            "DATA_003",
+            "DATA_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_001",
+            "DATA_006",
+            "DATA_002",
+            "DATA_003",
+            "DATA_004"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_001",
+            "DATA_006",
+            "DATA_002",
+            "DATA_003",
+            "DATA_014"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_001",
+            "DATA_006",
+            "DATA_002",
+            "DATA_003",
+            "DATA_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_003",
+      "role": "data_engineer",
+      "skill": "Task isolation",
+      "expected_chunk_id": "DATA_003",
+      "query": "Can you explain why task communication in Airflow should rely on supported mechanisms rather than assuming access to local memory on different machines?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_003",
+            "DATA_001",
+            "DATA_004",
+            "DATA_002",
+            "DATA_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_003",
+            "DATA_001",
+            "DATA_007",
+            "DATA_015",
+            "DATA_008"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_003",
+            "DATA_001",
+            "DATA_002",
+            "DATA_004",
+            "DATA_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_003",
+            "DATA_001",
+            "DATA_007",
+            "DATA_002",
+            "DATA_004"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_003",
+            "DATA_001",
+            "DATA_007",
+            "DATA_015",
+            "DATA_008"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_004",
+      "role": "data_engineer",
+      "skill": "XCom purpose",
+      "expected_chunk_id": "DATA_004",
+      "query": "Can you explain how XComs facilitate data exchange between task instances in a DAG run?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_004",
+            "DATA_002",
+            "DATA_005",
+            "DATA_001",
+            "DATA_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_004",
+            "DATA_001",
+            "DATA_002",
+            "DATA_005",
+            "DATA_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_004",
+            "DATA_002",
+            "DATA_005",
+            "DATA_001",
+            "DATA_006"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_004",
+            "DATA_002",
+            "DATA_001",
+            "DATA_005",
+            "DATA_006"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_004",
+            "DATA_002",
+            "DATA_001",
+            "DATA_005",
+            "DATA_006"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_006",
+      "role": "data_engineer",
+      "skill": "Scheduling",
+      "expected_chunk_id": "DATA_006",
+      "query": "What are the key considerations for scheduling workflow runs in a data interval and logical date context for incremental loads?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_001",
+            "DATA_011",
+            "DATA_007",
+            "DATA_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_001",
+            "DATA_014",
+            "DATA_002",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_001",
+            "DATA_002",
+            "DATA_007",
+            "DATA_014"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_001",
+            "DATA_014",
+            "DATA_002",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_001",
+            "DATA_014",
+            "DATA_002",
+            "DATA_007"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_008",
+      "role": "data_engineer",
+      "skill": "Failure handling",
+      "expected_chunk_id": "DATA_008",
+      "query": "Can you explain why pipelines should be designed to handle failures and incomplete data, rather than just ignoring them?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_008",
+            "DATA_007",
+            "DATA_018",
+            "DATA_016",
+            "DATA_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_008",
+            "DATA_014",
+            "DATA_015",
+            "DATA_007",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_008",
+            "DATA_007",
+            "DATA_011",
+            "DATA_019",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_008",
+            "DATA_007",
+            "DATA_014",
+            "DATA_011",
+            "DATA_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_008",
+            "DATA_014",
+            "DATA_015",
+            "DATA_007",
+            "DATA_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_010",
+      "role": "data_engineer",
+      "skill": "Database access",
+      "expected_chunk_id": "DATA_010",
+      "query": "Can you explain how parameterized statements in Python sqlite3 ensure the security and integrity of user input when executing SQL queries?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_010",
+            "DATA_009",
+            "DATA_001",
+            "DATA_002",
+            "DATA_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_010",
+            "DATA_007",
+            "DATA_011",
+            "DATA_009",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_010",
+            "DATA_009",
+            "DATA_007",
+            "DATA_011",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_010",
+            "DATA_009",
+            "DATA_007",
+            "DATA_011",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_010",
+            "DATA_009",
+            "DATA_007",
+            "DATA_011",
+            "DATA_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_011",
+      "role": "data_engineer",
+      "skill": "Data validation",
+      "expected_chunk_id": "DATA_011",
+      "query": "Can you explain the importance of data-quality checks in a pipeline, specifically what types of checks are included and why they're necessary?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_007",
+            "DATA_015",
+            "DATA_019",
+            "DATA_014"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_014",
+            "DATA_008",
+            "DATA_015",
+            "DATA_019"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_015",
+            "DATA_007",
+            "DATA_014",
+            "DATA_019"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_015",
+            "DATA_014",
+            "DATA_007",
+            "DATA_008"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_014",
+            "DATA_015",
+            "DATA_008",
+            "DATA_019"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_013",
+      "role": "data_engineer",
+      "skill": "Backfills",
+      "expected_chunk_id": "DATA_013",
+      "query": "Can you explain the importance of using partition-aware, idempotent logic in backfills to prevent data duplication or overwrite issues?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_013",
+            "DATA_011",
+            "DATA_007",
+            "DATA_002",
+            "DATA_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_013",
+            "DATA_007",
+            "DATA_008",
+            "DATA_018",
+            "DATA_017"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_013",
+            "DATA_007",
+            "DATA_008",
+            "DATA_011",
+            "DATA_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_013",
+            "DATA_007",
+            "DATA_008",
+            "DATA_018",
+            "DATA_017"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_013",
+            "DATA_007",
+            "DATA_008",
+            "DATA_018",
+            "DATA_017"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_015",
+      "role": "data_engineer",
+      "skill": "Pipeline alerts",
+      "expected_chunk_id": "DATA_015",
+      "query": "Can you explain how pipeline alerts should be designed to detect and respond to specific issues such as repeated failures, missing completions, or breached latency thresholds?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_015",
+            "DATA_007",
+            "DATA_019",
+            "DATA_002",
+            "DATA_014"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_015",
+            "DATA_014",
+            "DATA_008",
+            "DATA_019",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_015",
+            "DATA_007",
+            "DATA_014",
+            "DATA_019",
+            "DATA_008"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_015",
+            "DATA_014",
+            "DATA_007",
+            "DATA_008",
+            "DATA_019"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_015",
+            "DATA_014",
+            "DATA_008",
+            "DATA_007",
+            "DATA_019"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_017",
+      "role": "data_engineer",
+      "skill": "Series and episode mapping",
+      "expected_chunk_id": "DATA_017",
+      "query": "Can you explain how stable identifiers and explicit season and episode relationships help prevent duplicate content and keep episodes in their correct hierarchy during series migrations?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_016",
+            "DATA_013",
+            "DATA_007",
+            "DATA_020"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_013",
+            "DATA_012",
+            "DATA_020",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_016",
+            "DATA_013",
+            "DATA_012",
+            "DATA_020"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_013",
+            "DATA_016",
+            "DATA_012",
+            "DATA_020"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_013",
+            "DATA_012",
+            "DATA_016",
+            "DATA_020"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_018",
+      "role": "data_engineer",
+      "skill": "OTT event pipelines",
+      "expected_chunk_id": "DATA_018",
+      "query": "Can you explain how the schema, keys, ordering requirements, and replay behavior are defined for playback and content events when publishing to Kafka topics?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_019",
+            "DATA_011",
+            "DATA_016",
+            "DATA_017"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_019",
+            "DATA_016",
+            "DATA_013",
+            "DATA_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_019",
+            "DATA_016",
+            "DATA_011",
+            "DATA_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_019",
+            "DATA_016",
+            "DATA_013",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_019",
+            "DATA_016",
+            "DATA_013",
+            "DATA_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DATA_020",
+      "role": "data_engineer",
+      "skill": "Metadata migration reconciliation",
+      "expected_chunk_id": "DATA_020",
+      "query": "Can you explain the importance of reconciling metadata differences between the source and target systems during data migration?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_012",
+            "DATA_016",
+            "DATA_004",
+            "DATA_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_012",
+            "DATA_017",
+            "DATA_016",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_012",
+            "DATA_016",
+            "DATA_011",
+            "DATA_004"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_012",
+            "DATA_016",
+            "DATA_017",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_012",
+            "DATA_016",
+            "DATA_017",
+            "DATA_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_001",
+      "role": "devops_sre_engineer",
+      "skill": "Deployments",
+      "expected_chunk_id": "DEVO_001",
+      "query": "Can you explain how a Kubernetes Deployment works to ensure that updates to a stateless workload are handled smoothly?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_001",
+            "DEVO_002",
+            "DEVO_003",
+            "DEVO_007",
+            "DEVO_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_001",
+            "DEVO_003",
+            "DEVO_002",
+            "DEVO_018",
+            "DEVO_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_001",
+            "DEVO_002",
+            "DEVO_003",
+            "DEVO_018",
+            "DEVO_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_001",
+            "DEVO_002",
+            "DEVO_003",
+            "DEVO_018",
+            "DEVO_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_001",
+            "DEVO_002",
+            "DEVO_003",
+            "DEVO_018",
+            "DEVO_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_003",
+      "role": "devops_sre_engineer",
+      "skill": "Services",
+      "expected_chunk_id": "DEVO_003",
+      "query": "Can you explain how a Kubernetes Service provides a stable interface for a network application, even when the underlying Pods change?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_003",
+            "DEVO_001",
+            "DEVO_010",
+            "DEVO_005",
+            "DEVO_009"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_003",
+            "DEVO_001",
+            "DEVO_009",
+            "DEVO_007",
+            "DEVO_002"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_003",
+            "DEVO_001",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_003",
+            "DEVO_001",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_007"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_003",
+            "DEVO_001",
+            "DEVO_009",
+            "DEVO_007",
+            "DEVO_002"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_004",
+      "role": "devops_sre_engineer",
+      "skill": "ConfigMaps",
+      "expected_chunk_id": "DEVO_004",
+      "query": "Can you explain how ConfigMaps help manage environment-specific configuration in a containerized application?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_009",
+            "DEVO_006",
+            "DEVO_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_004",
+            "DEVO_001",
+            "DEVO_008",
+            "DEVO_003",
+            "DEVO_019"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_009",
+            "DEVO_003",
+            "DEVO_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_009",
+            "DEVO_001",
+            "DEVO_003"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_001",
+            "DEVO_008",
+            "DEVO_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_006",
+      "role": "devops_sre_engineer",
+      "skill": "Secret access",
+      "expected_chunk_id": "DEVO_006",
+      "query": "Can you explain why least-privilege access control is considered a crucial aspect of secret safety in a DevOps and SRE context?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_017",
+            "DEVO_001",
+            "DEVO_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_005",
+            "DEVO_019",
+            "DEVO_015",
+            "DEVO_002"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_005",
+            "DEVO_017",
+            "DEVO_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_005",
+            "DEVO_015",
+            "DEVO_002"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_005",
+            "DEVO_015",
+            "DEVO_002"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_008",
+      "role": "devops_sre_engineer",
+      "skill": "Dockerfile purpose",
+      "expected_chunk_id": "DEVO_008",
+      "query": "Can you explain the main difference between a Dockerfile and a Compose file in terms of their purpose and functionality?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_008",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_001",
+            "DEVO_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_008",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_004",
+            "DEVO_003"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_008",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_004",
+            "DEVO_003"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_008",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_004",
+            "DEVO_003"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_008",
+            "DEVO_009",
+            "DEVO_010",
+            "DEVO_004",
+            "DEVO_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_010",
+      "role": "devops_sre_engineer",
+      "skill": "Compose diagnosis",
+      "expected_chunk_id": "DEVO_010",
+      "query": "Can you explain how to diagnose issues with a Compose stack, specifically what steps to take when a service is running and what logs or commands would be most helpful to investigate?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_010",
+            "DEVO_003",
+            "DEVO_009",
+            "DEVO_006",
+            "DEVO_008"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_010",
+            "DEVO_009",
+            "DEVO_020",
+            "DEVO_008",
+            "DEVO_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_010",
+            "DEVO_009",
+            "DEVO_003",
+            "DEVO_008",
+            "DEVO_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_010",
+            "DEVO_009",
+            "DEVO_003",
+            "DEVO_008",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_010",
+            "DEVO_009",
+            "DEVO_020",
+            "DEVO_008",
+            "DEVO_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_011",
+      "role": "devops_sre_engineer",
+      "skill": "Time-series model",
+      "expected_chunk_id": "DEVO_011",
+      "query": "Can you explain how Prometheus stores and organizes its data as time-series values with metric names and labels?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_016",
+            "DEVO_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_007",
+            "DEVO_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_016",
+            "DEVO_007"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_016",
+            "DEVO_007"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_007",
+            "DEVO_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_013",
+      "role": "devops_sre_engineer",
+      "skill": "Alerting rules",
+      "expected_chunk_id": "DEVO_013",
+      "query": "Can you explain how Prometheus alerting rules work, specifically how they evaluate expressions over time series to create active alerts?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_013",
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_009",
+            "DEVO_014"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_013",
+            "DEVO_014",
+            "DEVO_017",
+            "DEVO_011",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_013",
+            "DEVO_011",
+            "DEVO_014",
+            "DEVO_012",
+            "DEVO_017"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_013",
+            "DEVO_011",
+            "DEVO_014",
+            "DEVO_017",
+            "DEVO_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_013",
+            "DEVO_014",
+            "DEVO_011",
+            "DEVO_017",
+            "DEVO_020"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_015",
+      "role": "devops_sre_engineer",
+      "skill": "Operational resilience",
+      "expected_chunk_id": "DEVO_015",
+      "query": "Can you explain the importance of having a rollback path in place during a rollout to ensure operational resilience?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_010",
+            "DEVO_001",
+            "DEVO_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_002",
+            "DEVO_009",
+            "DEVO_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_010",
+            "DEVO_002",
+            "DEVO_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_002",
+            "DEVO_010",
+            "DEVO_009"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_002",
+            "DEVO_009",
+            "DEVO_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_017",
+      "role": "devops_sre_engineer",
+      "skill": "OTT alert design",
+      "expected_chunk_id": "DEVO_017",
+      "query": "Can you explain how the design of OTT alerts should balance providing specific service, region, and runbook context with the need to avoid including unbounded viewer identifiers?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_012",
+            "DEVO_019",
+            "DEVO_010"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_019",
+            "DEVO_013",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_019",
+            "DEVO_012",
+            "DEVO_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_019",
+            "DEVO_013",
+            "DEVO_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_019",
+            "DEVO_013",
+            "DEVO_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_018",
+      "role": "devops_sre_engineer",
+      "skill": "Media workload rollout",
+      "expected_chunk_id": "DEVO_018",
+      "query": "Can you explain why media-service rollouts require a combination of readiness checks, capacity observation, progressive exposure, and a rollback path to ensure a healthy process doesn't produce playback-impacting responses?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_018",
+            "DEVO_015",
+            "DEVO_010",
+            "DEVO_019",
+            "DEVO_016"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_018",
+            "DEVO_015",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_018",
+            "DEVO_015",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_018",
+            "DEVO_015",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_014"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_018",
+            "DEVO_015",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_DEVO_020",
+      "role": "devops_sre_engineer",
+      "skill": "Streaming incident triage",
+      "expected_chunk_id": "DEVO_020",
+      "query": "Can you explain how the triage process should incorporate correlation between player symptoms and various system signals, such as API, manifest, CDN, and origin, to identify the underlying cause of an incident?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_018",
+            "DEVO_012",
+            "DEVO_015",
+            "DEVO_019"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_016",
+            "DEVO_014",
+            "DEVO_017",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_019",
+            "DEVO_018"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_014",
+            "DEVO_019"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_016",
+            "DEVO_014",
+            "DEVO_017",
+            "DEVO_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_001",
+      "role": "frontend_ui_developer",
+      "skill": "Semantic HTML",
+      "expected_chunk_id": "FRON_001",
+      "query": "What is the purpose of using the HTML element that provides built-in semantics and accessibility support to browsers and assistive technologies?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_006",
+            "FRON_007",
+            "FRON_015",
+            "FRON_013"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_006",
+            "FRON_012",
+            "FRON_011",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_006",
+            "FRON_007",
+            "FRON_012",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_006",
+            "FRON_012",
+            "FRON_011",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_006",
+            "FRON_012",
+            "FRON_011",
+            "FRON_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_003",
+      "role": "frontend_ui_developer",
+      "skill": "Image alternatives",
+      "expected_chunk_id": "FRON_003",
+      "query": "What is the recommended approach for providing text alternatives for images that are primarily used for decoration versus those that convey meaningful information?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_003",
+            "FRON_011",
+            "FRON_008",
+            "FRON_012",
+            "FRON_018"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_003",
+            "FRON_008",
+            "FRON_001",
+            "FRON_017",
+            "FRON_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_003",
+            "FRON_011",
+            "FRON_008",
+            "FRON_014",
+            "FRON_018"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_003",
+            "FRON_011",
+            "FRON_008",
+            "FRON_014",
+            "FRON_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_003",
+            "FRON_008",
+            "FRON_011",
+            "FRON_001",
+            "FRON_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_004",
+      "role": "frontend_ui_developer",
+      "skill": "Keyboard access",
+      "expected_chunk_id": "FRON_004",
+      "query": "Can you explain how interactive functionality should be designed to be accessible with a keyboard, ensuring that users can navigate through the interface logically?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_004",
+            "FRON_016",
+            "FRON_013",
+            "FRON_010",
+            "FRON_007"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_004",
+            "FRON_015",
+            "FRON_016",
+            "FRON_014",
+            "FRON_012"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_004",
+            "FRON_016",
+            "FRON_015",
+            "FRON_010",
+            "FRON_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_004",
+            "FRON_016",
+            "FRON_015",
+            "FRON_012",
+            "FRON_010"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_004",
+            "FRON_015",
+            "FRON_016",
+            "FRON_012",
+            "FRON_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_006",
+      "role": "frontend_ui_developer",
+      "skill": "ARIA use",
+      "expected_chunk_id": "FRON_006",
+      "query": "Can you explain when it's appropriate to use ARIA attributes to enhance the accessibility of custom widgets, and when a native HTML element should be used instead?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_006",
+            "FRON_001",
+            "FRON_012",
+            "FRON_015",
+            "FRON_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_006",
+            "FRON_012",
+            "FRON_001",
+            "FRON_011",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_006",
+            "FRON_001",
+            "FRON_012",
+            "FRON_015",
+            "FRON_011"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_006",
+            "FRON_012",
+            "FRON_001",
+            "FRON_011",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_006",
+            "FRON_012",
+            "FRON_001",
+            "FRON_011",
+            "FRON_017"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_008",
+      "role": "frontend_ui_developer",
+      "skill": "Contrast",
+      "expected_chunk_id": "FRON_008",
+      "query": "What are the specific contrast ratio requirements for normal and large text according to WCAG 2.2 Level AA guidelines?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_008",
+            "FRON_015",
+            "FRON_018",
+            "FRON_003",
+            "FRON_014"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_008",
+            "FRON_003",
+            "FRON_011",
+            "FRON_017",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_008",
+            "FRON_003",
+            "FRON_015",
+            "FRON_014",
+            "FRON_018"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_008",
+            "FRON_003",
+            "FRON_015",
+            "FRON_011",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_008",
+            "FRON_003",
+            "FRON_011",
+            "FRON_015",
+            "FRON_017"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_009",
+      "role": "frontend_ui_developer",
+      "skill": "Focus order",
+      "expected_chunk_id": "FRON_009",
+      "query": "Can you explain how the order in which focusable components receive focus should be determined to ensure that it aligns with the intended meaning and usability of the navigation sequence?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_009",
+            "FRON_004",
+            "FRON_005",
+            "FRON_014",
+            "FRON_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_009",
+            "FRON_005",
+            "FRON_011",
+            "FRON_004",
+            "FRON_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_009",
+            "FRON_004",
+            "FRON_005",
+            "FRON_011",
+            "FRON_014"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_009",
+            "FRON_005",
+            "FRON_004",
+            "FRON_011",
+            "FRON_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_009",
+            "FRON_005",
+            "FRON_004",
+            "FRON_011",
+            "FRON_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_011",
+      "role": "frontend_ui_developer",
+      "skill": "CSS accessibility",
+      "expected_chunk_id": "FRON_011",
+      "query": "Can you explain why it's a good practice to preserve meaningful focus indicators and essential information through color in CSS, rather than removing them?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_011",
+            "FRON_003",
+            "FRON_009",
+            "FRON_019",
+            "FRON_004"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_011",
+            "FRON_009",
+            "FRON_003",
+            "FRON_005",
+            "FRON_010"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_011",
+            "FRON_009",
+            "FRON_003",
+            "FRON_005",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_011",
+            "FRON_009",
+            "FRON_003",
+            "FRON_005",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_011",
+            "FRON_009",
+            "FRON_003",
+            "FRON_005",
+            "FRON_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_012",
+      "role": "frontend_ui_developer",
+      "skill": "JavaScript accessibility",
+      "expected_chunk_id": "FRON_012",
+      "query": "Can you explain how custom JavaScript controls should be designed to provide accurate accessibility features when they replace native elements?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_012",
+            "FRON_006",
+            "FRON_015",
+            "FRON_002",
+            "FRON_019"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_012",
+            "FRON_006",
+            "FRON_001",
+            "FRON_011",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_012",
+            "FRON_006",
+            "FRON_015",
+            "FRON_011",
+            "FRON_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_012",
+            "FRON_006",
+            "FRON_011",
+            "FRON_001",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_012",
+            "FRON_006",
+            "FRON_001",
+            "FRON_011",
+            "FRON_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_014",
+      "role": "frontend_ui_developer",
+      "skill": "Plain language",
+      "expected_chunk_id": "FRON_014",
+      "query": "What does it mean for a website to have clear link text and understandable instructions that cater to people with different cognitive and language needs?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_014",
+            "FRON_017",
+            "FRON_008",
+            "FRON_018",
+            "FRON_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_014",
+            "FRON_001",
+            "FRON_003",
+            "FRON_005",
+            "FRON_002"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_014",
+            "FRON_001",
+            "FRON_017",
+            "FRON_003",
+            "FRON_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_014",
+            "FRON_001",
+            "FRON_003",
+            "FRON_017",
+            "FRON_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_014",
+            "FRON_001",
+            "FRON_003",
+            "FRON_005",
+            "FRON_017"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_016",
+      "role": "frontend_ui_developer",
+      "skill": "Accessible video controls",
+      "expected_chunk_id": "FRON_016",
+      "query": "Can you explain how OTT player controls, such as play, pause, and seek, should be designed to be accessible for users with disabilities?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_002",
+            "FRON_013",
+            "FRON_010"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_015",
+            "FRON_004",
+            "FRON_012"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_002",
+            "FRON_010",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_015",
+            "FRON_012",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_015",
+            "FRON_012",
+            "FRON_017"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_017",
+      "role": "frontend_ui_developer",
+      "skill": "Caption selection UI",
+      "expected_chunk_id": "FRON_017",
+      "query": "Can you explain how the caption and subtitle tracks are displayed to ensure they are easily accessible and understandable for users?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_016",
+            "FRON_013",
+            "FRON_014",
+            "FRON_010"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_016",
+            "FRON_018",
+            "FRON_014",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_016",
+            "FRON_014",
+            "FRON_013",
+            "FRON_010"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_016",
+            "FRON_014",
+            "FRON_018",
+            "FRON_002"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_016",
+            "FRON_014",
+            "FRON_018",
+            "FRON_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_FRON_019",
+      "role": "frontend_ui_developer",
+      "skill": "Responsive OTT player",
+      "expected_chunk_id": "FRON_019",
+      "query": "Can you explain how the video player's controls should be designed to stay accessible and usable when the screen is very narrow?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 2,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_013",
+            "FRON_002",
+            "FRON_015"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_019",
+            "FRON_016",
+            "FRON_010",
+            "FRON_015",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 2,
+          "top5": [
+            "FRON_016",
+            "FRON_019",
+            "FRON_015",
+            "FRON_017",
+            "FRON_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_019",
+            "FRON_016",
+            "FRON_015",
+            "FRON_010",
+            "FRON_017"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_019",
+            "FRON_016",
+            "FRON_010",
+            "FRON_015",
+            "FRON_017"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_001",
+      "role": "qa_test_engineer",
+      "skill": "Test assertions",
+      "expected_chunk_id": "QA_T_001",
+      "query": "Can you explain the purpose of a matcher in a test assertion and how it relates to verifying a specific requirement?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_005",
+            "QA_T_010",
+            "QA_T_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_001",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_011",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_011",
+            "QA_T_005",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_011",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_001",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_011",
+            "QA_T_006"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_003",
+      "role": "qa_test_engineer",
+      "skill": "Locators",
+      "expected_chunk_id": "QA_T_003",
+      "query": "Can you explain how Playwright locators help with interactions and assertions in a test scenario?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_003",
+            "QA_T_002",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_013"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_003",
+            "QA_T_013",
+            "QA_T_002",
+            "QA_T_006",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_003",
+            "QA_T_002",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_003",
+            "QA_T_002",
+            "QA_T_013",
+            "QA_T_006",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_003",
+            "QA_T_013",
+            "QA_T_002",
+            "QA_T_006",
+            "QA_T_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_005",
+      "role": "qa_test_engineer",
+      "skill": "Test isolation",
+      "expected_chunk_id": "QA_T_005",
+      "query": "Can you explain why tests should be designed to maintain their own state independently of other tests?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_008",
+            "QA_T_007",
+            "QA_T_014",
+            "QA_T_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_015",
+            "QA_T_001",
+            "QA_T_007",
+            "QA_T_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_007",
+            "QA_T_014",
+            "QA_T_012",
+            "QA_T_008"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_015",
+            "QA_T_007",
+            "QA_T_014",
+            "QA_T_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_015",
+            "QA_T_007",
+            "QA_T_014",
+            "QA_T_018"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_006",
+      "role": "qa_test_engineer",
+      "skill": "API testing",
+      "expected_chunk_id": "QA_T_006",
+      "query": "Can we use Playwright to test server behavior by making direct REST API calls to validate server-side postconditions?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_013",
+            "QA_T_001",
+            "QA_T_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_013",
+            "QA_T_002",
+            "QA_T_003"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_013",
+            "QA_T_003",
+            "QA_T_002"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_013",
+            "QA_T_003",
+            "QA_T_002"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_013",
+            "QA_T_002",
+            "QA_T_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_008",
+      "role": "qa_test_engineer",
+      "skill": "Fixtures",
+      "expected_chunk_id": "QA_T_008",
+      "query": "Can you explain how pytest fixtures are used to make tests more efficient by providing reusable setup data or services?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_008",
+            "QA_T_005",
+            "QA_T_010",
+            "QA_T_009",
+            "QA_T_007"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_010",
+            "QA_T_013",
+            "QA_T_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_010",
+            "QA_T_005",
+            "QA_T_014"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_010",
+            "QA_T_014",
+            "QA_T_018"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_010",
+            "QA_T_013",
+            "QA_T_018"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_010",
+      "role": "qa_test_engineer",
+      "skill": "Fixture teardown",
+      "expected_chunk_id": "QA_T_010",
+      "query": "Can you explain how yield fixtures can ensure that resources are released even when test logic fails?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_010",
+            "QA_T_011",
+            "QA_T_008",
+            "QA_T_001",
+            "QA_T_006"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_010",
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_014",
+            "QA_T_018"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_010",
+            "QA_T_008",
+            "QA_T_011",
+            "QA_T_001",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_010",
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_011",
+            "QA_T_014"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_010",
+            "QA_T_008",
+            "QA_T_009",
+            "QA_T_014",
+            "QA_T_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_012",
+      "role": "qa_test_engineer",
+      "skill": "Negative testing",
+      "expected_chunk_id": "QA_T_012",
+      "query": "Can you explain how the API tests should handle cases where the identifier is invalid, the user is unauthorized, the input is malformed, or the limit boundaries are exceeded?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_015",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_007",
+            "QA_T_006",
+            "QA_T_016",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_015",
+            "QA_T_006"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_006",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_006",
+            "QA_T_013"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_014",
+      "role": "qa_test_engineer",
+      "skill": "Flaky tests",
+      "expected_chunk_id": "QA_T_014",
+      "query": "Can you explain how using observable conditions and resilient locators can help minimize the timing-related issues that cause flaky tests in our application?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_014",
+            "QA_T_004",
+            "QA_T_003",
+            "QA_T_018",
+            "QA_T_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_014",
+            "QA_T_004",
+            "QA_T_013",
+            "QA_T_018",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_014",
+            "QA_T_004",
+            "QA_T_018",
+            "QA_T_003",
+            "QA_T_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_014",
+            "QA_T_004",
+            "QA_T_018",
+            "QA_T_003",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_014",
+            "QA_T_004",
+            "QA_T_018",
+            "QA_T_013",
+            "QA_T_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_016",
+      "role": "qa_test_engineer",
+      "skill": "OTT entitlement testing",
+      "expected_chunk_id": "QA_T_016",
+      "query": "Can you explain how the playback API tests should cover different scenarios for entitled and non-entitled users, as well as other edge cases mentioned in the passage?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_007",
+            "QA_T_012",
+            "QA_T_015",
+            "QA_T_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_012"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_007",
+            "QA_T_012",
+            "QA_T_018",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_007",
+            "QA_T_012",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_007",
+            "QA_T_012",
+            "QA_T_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_017",
+      "role": "qa_test_engineer",
+      "skill": "Manifest validation",
+      "expected_chunk_id": "QA_T_017",
+      "query": "Can you explain how HLS validation ensures that the media files and metadata are correctly formatted and consistent across different renditions and segments?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_019",
+            "QA_T_018",
+            "QA_T_007",
+            "QA_T_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_018",
+            "QA_T_007",
+            "QA_T_019",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_019",
+            "QA_T_018",
+            "QA_T_007",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_018",
+            "QA_T_019",
+            "QA_T_007",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_018",
+            "QA_T_007",
+            "QA_T_019",
+            "QA_T_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_019",
+      "role": "qa_test_engineer",
+      "skill": "Caption and audio testing",
+      "expected_chunk_id": "QA_T_019",
+      "query": "Can you explain what it means for the audio, subtitle, and caption tracks to be synchronized with the programme in the context of OTT testing?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_019",
+            "QA_T_016",
+            "QA_T_021",
+            "QA_T_012",
+            "QA_T_006"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_019",
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_021",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_019",
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_021",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_019",
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_021",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_019",
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_021",
+            "QA_T_013"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "SEM_QA_T_021",
+      "role": "qa_test_engineer",
+      "skill": "OTT device matrix",
+      "expected_chunk_id": "QA_T_021",
+      "query": "Can you explain why an OTT device matrix should prioritize representative browsers, operating systems, screen sizes, and playback capabilities over exhaustive testing of every possible device combination?",
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_021",
+            "QA_T_016",
+            "QA_T_018",
+            "QA_T_019",
+            "QA_T_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_021",
+            "QA_T_016",
+            "QA_T_019",
+            "QA_T_018",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_021",
+            "QA_T_016",
+            "QA_T_019",
+            "QA_T_018",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_021",
+            "QA_T_016",
+            "QA_T_019",
+            "QA_T_018",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_021",
+            "QA_T_016",
+            "QA_T_019",
+            "QA_T_018",
+            "QA_T_009"
+          ]
+        }
+      }
+    }
+  ]
+}

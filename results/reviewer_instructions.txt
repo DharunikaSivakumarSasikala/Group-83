@@ -1,0 +1,48 @@
+SKILLSCOPE RETRIEVAL HELD-OUT REVIEW
+
+Purpose
+-------
+Check whether each paraphrased query preserves the technical meaning of its
+source knowledge chunk. Do not judge which retrieval model is better.
+
+Review each case independently.
+
+Column: semantic_equivalent_yes_no
+----------------------------------
+Enter YES when the candidate query still asks about substantially the same
+technical concept as the source chunk.
+
+Enter NO when the query:
+- changes an important technical meaning,
+- contradicts the source,
+- removes so much detail that a different concept could reasonably answer it,
+- or introduces requirements not supported by the source.
+
+Column: acceptable_chunk_ids
+----------------------------
+If semantic_equivalent_yes_no = YES:
+- enter the source_chunk_id at minimum when it is appropriate evidence;
+- if another knowledge chunk would ALSO be a valid answer, include all
+  acceptable IDs separated by semicolons.
+
+Example:
+DATA_004;DATA_003
+
+If semantic_equivalent_yes_no = NO:
+leave acceptable_chunk_ids blank.
+
+Column: notes
+-------------
+Briefly explain NO decisions or ambiguous cases.
+For obvious YES cases, notes may be left blank.
+
+Important
+---------
+1. Reviewers must work independently.
+2. Do not look at TF-IDF, embedding, or hybrid retrieval ranks.
+3. Do not copy the other reviewer's answers.
+4. Judge semantic validity, not writing style.
+5. It is acceptable to mark a case NO if it became too vague.
+
+After both reviewers finish, return both completed CSV files for adjudication
+and final TF-IDF-vs-embedding evaluation.

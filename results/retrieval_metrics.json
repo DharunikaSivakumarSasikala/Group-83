@@ -1,0 +1,807 @@
+{
+  "dataset": {
+    "knowledge_chunks": 120,
+    "questions": 83
+  },
+  "global_tfidf": {
+    "questions": 83,
+    "hit_at_1": 0.4217,
+    "hit_at_3": 0.506,
+    "hit_at_5": 0.5301,
+    "mrr_at_5": 0.4647,
+    "unanswered_rate_at_5": 0.4699,
+    "misses": [
+      {
+        "question_id": "Q_BACK_01",
+        "expected": "BACK_001",
+        "retrieved": [
+          "BACK_005",
+          "BACK_032",
+          "BACK_004",
+          "FRON_003",
+          "BACK_027"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_02",
+        "expected": "BACK_002",
+        "retrieved": [
+          "BACK_006",
+          "BACK_037",
+          "BACK_015",
+          "QA_T_007",
+          "FRON_008"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_04",
+        "expected": "BACK_004",
+        "retrieved": [
+          "BACK_010",
+          "DATA_011",
+          "QA_T_007",
+          "BACK_005",
+          "BACK_003"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_05",
+        "expected": "BACK_005",
+        "retrieved": [
+          "DEVO_008",
+          "DEVO_009",
+          "BACK_012",
+          "DEVO_010",
+          "BACK_011"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_06",
+        "expected": "BACK_006",
+        "retrieved": [
+          "BACK_009",
+          "QA_T_007",
+          "BACK_005",
+          "BACK_003",
+          "BACK_036"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_07",
+        "expected": "BACK_007",
+        "retrieved": [
+          "QA_T_012",
+          "QA_T_007",
+          "QA_T_005",
+          "DATA_011",
+          "QA_T_016"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_08",
+        "expected": "BACK_008",
+        "retrieved": [
+          "BACK_012",
+          "DEVO_008",
+          "FRON_005",
+          "FRON_009",
+          "BACK_011"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_09",
+        "expected": "BACK_009",
+        "retrieved": [
+          "BACK_004",
+          "BACK_002",
+          "BACK_015",
+          "BACK_001",
+          "BACK_019"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_10",
+        "expected": "BACK_010",
+        "retrieved": [
+          "BACK_008",
+          "BACK_036",
+          "BACK_021",
+          "DATA_005",
+          "QA_T_007"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_23",
+        "expected": "BACK_040",
+        "retrieved": [
+          "QA_T_013",
+          "BACK_036",
+          "QA_T_016",
+          "DEVO_010",
+          "FRON_018"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_03",
+        "expected": "FRON_003",
+        "retrieved": [
+          "FRON_015",
+          "FRON_004",
+          "FRON_012",
+          "DATA_016",
+          "FRON_011"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_04",
+        "expected": "FRON_004",
+        "retrieved": [
+          "FRON_008",
+          "BACK_021",
+          "BACK_011",
+          "FRON_018",
+          "FRON_003"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_05",
+        "expected": "FRON_005",
+        "retrieved": [
+          "FRON_006",
+          "BACK_011",
+          "FRON_012",
+          "BACK_001",
+          "BACK_002"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_06",
+        "expected": "FRON_006",
+        "retrieved": [
+          "FRON_005",
+          "QA_T_005",
+          "BACK_012",
+          "FRON_009",
+          "DATA_007"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_07",
+        "expected": "FRON_007",
+        "retrieved": [
+          "FRON_013",
+          "FRON_016",
+          "QA_T_008",
+          "QA_T_003",
+          "BACK_001"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_08",
+        "expected": "FRON_008",
+        "retrieved": [
+          "FRON_010",
+          "DATA_013",
+          "QA_T_005",
+          "DATA_007",
+          "FRON_019"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_09",
+        "expected": "FRON_009",
+        "retrieved": [
+          "FRON_011",
+          "BACK_001",
+          "BACK_002",
+          "BACK_003",
+          "BACK_004"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_10",
+        "expected": "FRON_010",
+        "retrieved": [
+          "FRON_015",
+          "BACK_015",
+          "DEVO_010",
+          "FRON_011",
+          "BACK_006"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_02",
+        "expected": "DEVO_002",
+        "retrieved": [
+          "BACK_014",
+          "QA_T_005",
+          "DEVO_010",
+          "DATA_007",
+          "DEVO_003"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_03",
+        "expected": "DEVO_003",
+        "retrieved": [
+          "DEVO_006",
+          "DEVO_019",
+          "DATA_008",
+          "QA_T_021",
+          "FRON_009"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_04",
+        "expected": "DEVO_004",
+        "retrieved": [
+          "DEVO_005",
+          "BACK_001",
+          "BACK_002",
+          "BACK_003",
+          "BACK_004"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_05",
+        "expected": "DEVO_005",
+        "retrieved": [
+          "BACK_001",
+          "BACK_002",
+          "BACK_003",
+          "BACK_004",
+          "BACK_005"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_06",
+        "expected": "DEVO_006",
+        "retrieved": [
+          "DEVO_008",
+          "DEVO_009",
+          "BACK_012",
+          "DEVO_010",
+          "BACK_011"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_07",
+        "expected": "DEVO_007",
+        "retrieved": [
+          "DEVO_011",
+          "DEVO_013",
+          "DATA_014",
+          "DEVO_012",
+          "DATA_017"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_08",
+        "expected": "DEVO_008",
+        "retrieved": [
+          "DEVO_012",
+          "FRON_002",
+          "DEVO_017",
+          "BACK_029",
+          "FRON_003"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_10",
+        "expected": "DEVO_010",
+        "retrieved": [
+          "DATA_010",
+          "DEVO_018",
+          "DATA_007",
+          "DATA_009",
+          "BACK_010"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_04",
+        "expected": "QA_T_004",
+        "retrieved": [
+          "QA_T_005",
+          "DATA_003",
+          "QA_T_008",
+          "QA_T_007",
+          "QA_T_014"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_06",
+        "expected": "QA_T_006",
+        "retrieved": [
+          "QA_T_009",
+          "QA_T_008",
+          "QA_T_010",
+          "BACK_001",
+          "BACK_002"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_07",
+        "expected": "QA_T_007",
+        "retrieved": [
+          "QA_T_009",
+          "QA_T_005",
+          "QA_T_010",
+          "DATA_007",
+          "BACK_031"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_09",
+        "expected": "QA_T_009",
+        "retrieved": [
+          "QA_T_011",
+          "BACK_011",
+          "FRON_012",
+          "BACK_001",
+          "BACK_002"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_10",
+        "expected": "QA_T_010",
+        "retrieved": [
+          "DEVO_004",
+          "BACK_014",
+          "QA_T_003",
+          "QA_T_006",
+          "QA_T_013"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_02",
+        "expected": "DATA_002",
+        "retrieved": [
+          "DATA_007",
+          "DATA_004",
+          "DATA_005",
+          "BACK_001",
+          "BACK_002"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_03",
+        "expected": "DATA_003",
+        "retrieved": [
+          "DATA_005",
+          "QA_T_010",
+          "DATA_004",
+          "FRON_008",
+          "BACK_001"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_04",
+        "expected": "DATA_004",
+        "retrieved": [
+          "DATA_007",
+          "DATA_001",
+          "DATA_015",
+          "DATA_013",
+          "DATA_003"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_05",
+        "expected": "DATA_005",
+        "retrieved": [
+          "QA_T_017",
+          "DATA_011",
+          "QA_T_007",
+          "BACK_018",
+          "BACK_005"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_06",
+        "expected": "DATA_006",
+        "retrieved": [
+          "DATA_012",
+          "DATA_011",
+          "DATA_007",
+          "QA_T_008",
+          "DATA_002"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_08",
+        "expected": "DATA_008",
+        "retrieved": [
+          "DATA_015",
+          "QA_T_003",
+          "FRON_015",
+          "DATA_007",
+          "DEVO_014"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_09",
+        "expected": "DATA_009",
+        "retrieved": [
+          "DATA_002",
+          "DATA_001",
+          "BACK_014",
+          "DATA_004",
+          "BACK_033"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_10",
+        "expected": "DATA_010",
+        "retrieved": [
+          "DATA_014",
+          "DATA_015",
+          "FRON_002",
+          "DATA_007",
+          "BACK_029"
+        ]
+      }
+    ]
+  },
+  "role_aware_tfidf": {
+    "questions": 83,
+    "hit_at_1": 0.4458,
+    "hit_at_3": 0.5181,
+    "hit_at_5": 0.6145,
+    "mrr_at_5": 0.4992,
+    "unanswered_rate_at_5": 0.3855,
+    "misses": [
+      {
+        "question_id": "Q_BACK_01",
+        "expected": "BACK_001",
+        "retrieved": [
+          "BACK_005",
+          "BACK_032",
+          "BACK_004",
+          "BACK_027",
+          "BACK_002"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_02",
+        "expected": "BACK_002",
+        "retrieved": [
+          "BACK_006",
+          "BACK_037",
+          "BACK_015",
+          "BACK_016",
+          "BACK_026"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_04",
+        "expected": "BACK_004",
+        "retrieved": [
+          "BACK_010",
+          "BACK_005",
+          "BACK_003",
+          "BACK_009",
+          "BACK_036"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_05",
+        "expected": "BACK_005",
+        "retrieved": [
+          "BACK_012",
+          "BACK_011",
+          "BACK_013",
+          "BACK_001",
+          "BACK_002"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_06",
+        "expected": "BACK_006",
+        "retrieved": [
+          "BACK_009",
+          "BACK_005",
+          "BACK_003",
+          "BACK_036",
+          "BACK_004"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_07",
+        "expected": "BACK_007",
+        "retrieved": [
+          "BACK_005",
+          "BACK_003",
+          "BACK_009",
+          "BACK_036",
+          "BACK_004"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_08",
+        "expected": "BACK_008",
+        "retrieved": [
+          "BACK_012",
+          "BACK_011",
+          "BACK_001",
+          "BACK_002",
+          "BACK_003"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_09",
+        "expected": "BACK_009",
+        "retrieved": [
+          "BACK_004",
+          "BACK_002",
+          "BACK_015",
+          "BACK_001",
+          "BACK_019"
+        ]
+      },
+      {
+        "question_id": "Q_BACK_10",
+        "expected": "BACK_010",
+        "retrieved": [
+          "BACK_008",
+          "BACK_036",
+          "BACK_021",
+          "BACK_020",
+          "BACK_005"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_03",
+        "expected": "FRON_003",
+        "retrieved": [
+          "FRON_015",
+          "FRON_004",
+          "FRON_012",
+          "FRON_011",
+          "FRON_006"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_04",
+        "expected": "FRON_004",
+        "retrieved": [
+          "FRON_008",
+          "FRON_018",
+          "FRON_003",
+          "FRON_014",
+          "FRON_001"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_05",
+        "expected": "FRON_005",
+        "retrieved": [
+          "FRON_006",
+          "FRON_012",
+          "FRON_001",
+          "FRON_002",
+          "FRON_003"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_06",
+        "expected": "FRON_006",
+        "retrieved": [
+          "FRON_005",
+          "FRON_009",
+          "FRON_001",
+          "FRON_002",
+          "FRON_003"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_07",
+        "expected": "FRON_007",
+        "retrieved": [
+          "FRON_013",
+          "FRON_016",
+          "FRON_001",
+          "FRON_002",
+          "FRON_003"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_08",
+        "expected": "FRON_008",
+        "retrieved": [
+          "FRON_010",
+          "FRON_019",
+          "FRON_001",
+          "FRON_002",
+          "FRON_003"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_09",
+        "expected": "FRON_009",
+        "retrieved": [
+          "FRON_011",
+          "FRON_001",
+          "FRON_002",
+          "FRON_003",
+          "FRON_004"
+        ]
+      },
+      {
+        "question_id": "Q_FRON_10",
+        "expected": "FRON_010",
+        "retrieved": [
+          "FRON_015",
+          "FRON_011",
+          "FRON_006",
+          "FRON_017",
+          "FRON_012"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_02",
+        "expected": "DEVO_002",
+        "retrieved": [
+          "DEVO_010",
+          "DEVO_003",
+          "DEVO_016",
+          "DEVO_018",
+          "DEVO_017"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_06",
+        "expected": "DEVO_006",
+        "retrieved": [
+          "DEVO_008",
+          "DEVO_009",
+          "DEVO_010",
+          "DEVO_001",
+          "DEVO_002"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_07",
+        "expected": "DEVO_007",
+        "retrieved": [
+          "DEVO_011",
+          "DEVO_013",
+          "DEVO_012",
+          "DEVO_016",
+          "DEVO_001"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_08",
+        "expected": "DEVO_008",
+        "retrieved": [
+          "DEVO_012",
+          "DEVO_017",
+          "DEVO_011",
+          "DEVO_016",
+          "DEVO_001"
+        ]
+      },
+      {
+        "question_id": "Q_DEVO_10",
+        "expected": "DEVO_010",
+        "retrieved": [
+          "DEVO_018",
+          "DEVO_015",
+          "DEVO_001",
+          "DEVO_002",
+          "DEVO_003"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_04",
+        "expected": "QA_T_004",
+        "retrieved": [
+          "QA_T_005",
+          "QA_T_008",
+          "QA_T_007",
+          "QA_T_014",
+          "QA_T_012"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_06",
+        "expected": "QA_T_006",
+        "retrieved": [
+          "QA_T_009",
+          "QA_T_008",
+          "QA_T_010",
+          "QA_T_001",
+          "QA_T_002"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_07",
+        "expected": "QA_T_007",
+        "retrieved": [
+          "QA_T_009",
+          "QA_T_005",
+          "QA_T_010",
+          "QA_T_001",
+          "QA_T_002"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_09",
+        "expected": "QA_T_009",
+        "retrieved": [
+          "QA_T_011",
+          "QA_T_001",
+          "QA_T_002",
+          "QA_T_003",
+          "QA_T_004"
+        ]
+      },
+      {
+        "question_id": "Q_QA_T_10",
+        "expected": "QA_T_010",
+        "retrieved": [
+          "QA_T_003",
+          "QA_T_006",
+          "QA_T_013",
+          "QA_T_002",
+          "QA_T_001"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_04",
+        "expected": "DATA_004",
+        "retrieved": [
+          "DATA_007",
+          "DATA_001",
+          "DATA_015",
+          "DATA_013",
+          "DATA_003"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_06",
+        "expected": "DATA_006",
+        "retrieved": [
+          "DATA_012",
+          "DATA_011",
+          "DATA_007",
+          "DATA_002",
+          "DATA_005"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_08",
+        "expected": "DATA_008",
+        "retrieved": [
+          "DATA_015",
+          "DATA_007",
+          "DATA_014",
+          "DATA_011",
+          "DATA_001"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_09",
+        "expected": "DATA_009",
+        "retrieved": [
+          "DATA_002",
+          "DATA_001",
+          "DATA_004",
+          "DATA_006",
+          "DATA_003"
+        ]
+      },
+      {
+        "question_id": "Q_DATA_10",
+        "expected": "DATA_010",
+        "retrieved": [
+          "DATA_014",
+          "DATA_015",
+          "DATA_007",
+          "DATA_011",
+          "DATA_001"
+        ]
+      }
+    ]
+  }
+}

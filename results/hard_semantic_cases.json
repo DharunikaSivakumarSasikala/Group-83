@@ -1,0 +1,542 @@
+[
+  {
+    "case_id": "HARD_BACK_001",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_001",
+    "skill": "API fundamentals",
+    "query": "Here's a challenging semantic retrieval query: \"What is the purpose of a standardized format for documenting web APIs that allows developers to grasp the functionality and data exchange without needing to examine the underlying code?\" This query aims to capture the essence of the original passage while using different wording and synonyms, making it harder for a keyword-only search system to retrieve the correct answer.",
+    "content_word_overlap": 0.13333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_005",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_005",
+    "skill": "API contracts",
+    "query": "Here's a difficult semantic retrieval query: \"What feature of a system allows for the separation of data producers and consumers, making it easier to ensure data consistency and facilitating the creation of reusable code?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.15384615384615385,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_008",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_008",
+    "skill": "Input and resource controls",
+    "query": "Here's a challenging semantic retrieval query: \"What happens when a system doesn't enforce limits on its usage, leading to a surge in CPU, memory, or storage usage that can cause financial penalties?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.25,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_012",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_012",
+    "skill": "Dockerfile layers",
+    "query": "Here's a challenging semantic retrieval query: \"When building a new version of a project, it's usually a good idea to update the stable parts first, rather than the parts that are constantly being modified, to minimize the time it takes to rebuild the entire thing.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.16666666666666666,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_015",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_015",
+    "skill": "API security testing",
+    "query": "Can you verify that the backend software engineer's work ensures that the system correctly validates user permissions for specific components and handles invalid input combinations?",
+    "content_word_overlap": 0.14285714285714285,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_019",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_019",
+    "skill": "C integer safety",
+    "query": "Here's a challenging semantic retrieval query: \"When performing calculations, what's the risk of losing data that could compromise the integrity of the system?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the context and nuances of the original passage, making it a difficult semantic retrieval query.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_022",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_022",
+    "skill": "C++ ownership",
+    "query": "Here's a challenging semantic retrieval query: \"What approach to memory management in C++ should prioritize the use of managed resources over direct control?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the nuances of memory management in C++ and the importance of prioritizing managed resources.",
+    "content_word_overlap": 0.07692307692307693,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_026",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_026",
+    "skill": "Python data structures",
+    "query": "Here's a challenging semantic retrieval query: \"What data types does our team use to store and manage data in a way that allows for efficient lookup, while also considering the need for fast insertion and deletion?\" This query requires the search system to understand the nuances of data storage and management, and to recognize that the team is looking for data types that balance lookup efficiency with mutability. The use of phrases like \"efficient lookup\" and \"fast insertion and deletion\" requires the search system to have a deep understanding of the technical context and to be able to retrieve the correct information.",
+    "content_word_overlap": 0.13333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_029",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_029",
+    "skill": "Python mutability",
+    "query": "Here's a challenging semantic retrieval query: \"What are the pitfalls of using shared state in a modular system, and how can we ensure data integrity across different parts of the codebase?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the nuances of the concept and retrieve the relevant information.",
+    "content_word_overlap": 0.16666666666666666,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_033",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_033",
+    "skill": "Go interfaces",
+    "query": "Here's a challenging semantic retrieval query: \"What happens when a new piece of code is added to a system without needing to be explicitly defined?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_036",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_036",
+    "skill": "OTT playback API design",
+    "query": "Can a system return a valid content stream along with a detailed breakdown of its validity period and potential issues without revealing the underlying mechanics?",
+    "content_word_overlap": 0.058823529411764705,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_BACK_040",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_040",
+    "skill": "Playback session resilience",
+    "query": "Here's a challenging semantic retrieval query: \"What type of error handling mechanisms should be used in a system that provides a continuous stream of data, to ensure that it can recover from temporary disruptions without losing any valuable information?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_001",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_001",
+    "skill": "DAG concept",
+    "query": "Here's a challenging semantic retrieval query: \"What is the fundamental building block of a scheduled task execution pipeline that can be broken down into individual components and is subject to a predetermined sequence of execution?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_003",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_003",
+    "skill": "Task isolation",
+    "query": "Here's a challenging semantic retrieval query: \"When working with a distributed workflow system, what's the best approach to ensure that data is shared between components without relying on shared storage?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.06666666666666667,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_004",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_004",
+    "skill": "XCom purpose",
+    "query": "Here's a challenging semantic retrieval query: \"How do we facilitate the transfer of limited information between workflow components during a run?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.09090909090909091,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_006",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_006",
+    "skill": "Scheduling",
+    "query": "Here's a challenging semantic retrieval query: \"When should we set up the automated data processing pipeline to run at regular time intervals, taking into account the frequency of data updates and the specific dates when new data becomes available?\" This query aims to capture the essence of the original passage, but uses different wording and synonyms to avoid reusing the source terms. It requires a keyword-only search system to understand the technical meaning behind the query.",
+    "content_word_overlap": 0.06666666666666667,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_008",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_008",
+    "skill": "Failure handling",
+    "query": "Can you design a data processing workflow that can detect and recover from data corruption, and ensure that the responsible team member is notified and takes responsibility for the issue?",
+    "content_word_overlap": 0.07142857142857142,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_010",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_010",
+    "skill": "Database access",
+    "query": "Can you explain how to use a specific protocol to securely pass variables into a query, allowing for the separation of code and data, and ensuring the integrity of the data being transferred?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_011",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_011",
+    "skill": "Data validation",
+    "query": "Can you verify that the data conforms to the standard format, including the correct number of rows, no missing values, and values within the specified limits?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_013",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_013",
+    "skill": "Backfills",
+    "query": "Here's a challenging semantic retrieval query: \"Design a mechanism that ensures data consistency across multiple runs, without causing data loss or duplication, and that can handle changes to the data without reapplying the same changes multiple times.\" This query requires the retrieval system to understand the nuances of the original passage and convey the same technical meaning using different wording and synonyms, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.08333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_015",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_015",
+    "skill": "Pipeline alerts",
+    "query": "Can you detect when a data processing stage is consistently experiencing unmet performance expectations, such as prolonged delays or unfulfilled quality standards?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_017",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_017",
+    "skill": "Series and episode mapping",
+    "query": "Here's a challenging semantic retrieval query: \"What is the requirement for maintaining a consistent structure of content within a broadcast schedule, ensuring that repeated transmissions do not inadvertently alter the sequence of events or disconnect individual segments from their parent units?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.06666666666666667,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_018",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_018",
+    "skill": "OTT event pipelines",
+    "query": "Here's a challenging semantic retrieval query: \"What specific configurations need to be set up for data to be successfully transmitted to Kafka topics and then handled by the system, without any issues with data structure, sequence, or re-execution?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.13333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DATA_020",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_020",
+    "skill": "Metadata migration reconciliation",
+    "query": "Here's a challenging semantic retrieval query: \"Ensure that the data transfer process accurately accounts for discrepancies between the original data and the updated data, while maintaining a detailed log of errors and providing a subset of the data for testing purposes.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.058823529411764705,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_001",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_001",
+    "skill": "Deployments",
+    "query": "Here's a challenging semantic retrieval query: \"What is the primary mechanism by which a cluster of containers is orchestrated to ensure a consistent number of instances of a given application, while allowing for the addition or removal of instances as needed?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_003",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_003",
+    "skill": "Services",
+    "query": "Here's a challenging semantic retrieval query: \"What happens to a deployment of a workload when the underlying virtual machines are swapped out?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_004",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_004",
+    "skill": "ConfigMaps",
+    "query": "Here's a challenging semantic retrieval query: \"What is the purpose of a centralized repository for sensitive data that allows teams to manage distinct settings for different applications?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_006",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_006",
+    "skill": "Secret access",
+    "query": "Here's a challenging semantic retrieval query: \"What measures should we take to minimize the risk of sensitive data being compromised by limiting the scope of our system's configuration files and logs?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.13333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_008",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_008",
+    "skill": "Dockerfile purpose",
+    "query": "Here's a challenging semantic retrieval query: \"What is the configuration tool used to orchestrate multiple virtualized environments, allowing for the creation of a self-contained package that can be easily deployed and managed?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_010",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_010",
+    "skill": "Compose diagnosis",
+    "query": "Here's a challenging semantic retrieval query: \"What tasks can we perform on a live application to troubleshoot its behavior?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the query system to understand the context and intent behind the query, making it more difficult for a keyword-only search system.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_011",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_011",
+    "skill": "Time-series model",
+    "query": "Here's a challenging semantic retrieval query: \"How do we manage the collection of numerical observations with associated attributes, where each observation is tied to a specific point in time?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.08333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_013",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_013",
+    "skill": "Alerting rules",
+    "query": "Here's a challenging semantic retrieval query that preserves the technical meaning of the original passage: \"What triggers a notification when a condition is met in a time-based data collection system?\" This query uses different wording and synonyms to convey the same idea as the original passage, without reusing the forbidden terms. It also avoids mentioning the chunk ID, source title, document title, or the task itself, making it a difficult query for a keyword-only search system.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_015",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_015",
+    "skill": "Operational resilience",
+    "query": "Can you identify the process of implementing a new update that is not yet fully functional, and which allows for a quick return to a previous state if needed?",
+    "content_word_overlap": 0.06666666666666667,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_017",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_017",
+    "skill": "OTT alert design",
+    "query": "Here's a challenging semantic retrieval query: \"When monitoring system performance, what specific metrics should be highlighted to indicate a potential issue, and how can these be tied to a specific service, geographic location, and set of predefined procedures?\" This query aims to capture the essence of the original passage while using different wording and synonyms, making it harder for a keyword-only search system to retrieve the correct result.",
+    "content_word_overlap": 0.05,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_018",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_018",
+    "skill": "Media workload rollout",
+    "query": "Here's a challenging semantic retrieval query: \"As a process becomes operational, it's essential to verify its performance, monitor its load, and incrementally introduce it to production while maintaining a safety net to revert to a previous state if issues arise.\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing the source terms. It requires a keyword-only search system to accurately retrieve the relevant information.",
+    "content_word_overlap": 0.0625,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_DEVO_020",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_020",
+    "skill": "Streaming incident triage",
+    "query": "Here's a challenging semantic retrieval query: \"When analyzing player complaints, can we link the timing of their issues to the performance of our backend services, network latency, and data storage, to better understand the root cause of the problem?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.11764705882352941,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_001",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_001",
+    "skill": "Semantic HTML",
+    "query": "Here's a challenging semantic retrieval query: \"What feature of an HTML component enables it to convey meaning to screen readers and other assistive tools, thereby enhancing the user experience?\" This query requires the retrieval system to understand the concept of semantic meaning and its relationship with assistive technologies, while using different wording and synonyms to avoid direct reuse of source terms.",
+    "content_word_overlap": 0.2857142857142857,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_003",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_003",
+    "skill": "Image alternatives",
+    "query": "Here's a challenging semantic retrieval query: \"What type of visual content should be stripped of supplementary text to prevent it from interfering with screen readers?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the nuances of the original passage and apply them to a new context.",
+    "content_word_overlap": 0.15384615384615385,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_004",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_004",
+    "skill": "Keyboard access",
+    "query": "Here's a challenging semantic retrieval query: \"How can we ensure that users can control the application with only their input devices, and that the interface responds in a predictable and coherent manner?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_006",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_006",
+    "skill": "ARIA use",
+    "query": "Here's a challenging semantic retrieval query: \"When building a user interface, what's the best approach to ensure that assistive technologies can understand the purpose of a specific interactive component, rather than forcing a generic interpretation?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It also requires the search system to understand the nuances of the concept and the context in which it's being applied.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_008",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_008",
+    "skill": "Contrast",
+    "query": "Here's a challenging semantic retrieval query: \"What minimum visual separation is needed between font sizes to meet the accessibility guidelines for digital interfaces, considering the impact of font size on readability?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_009",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_009",
+    "skill": "Focus order",
+    "query": "Here's a challenging semantic retrieval query: \"Arrange elements in a way that maintains usability and logical flow when the user's path impacts the overall interaction experience.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.08333333333333333,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_011",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_011",
+    "skill": "CSS accessibility",
+    "query": "Here's a challenging semantic retrieval query: \"What design principles should be followed to ensure that visual cues remain intact when implementing visual styling?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires a keyword-only search system to understand the nuances of the query and retrieve the correct result.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_012",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_012",
+    "skill": "JavaScript accessibility",
+    "query": "Here's a challenging semantic retrieval query: \"When implementing UI components, what specific attributes must be declared to ensure proper interaction with assistive technologies?\" This query aims to capture the essence of the original passage while using different wording and synonyms, making it harder for a keyword-only search system to retrieve the correct answer.",
+    "content_word_overlap": 0.07692307692307693,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_014",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_014",
+    "skill": "Plain language",
+    "query": "Here's a challenging semantic retrieval query: \"What design elements can be used to make the interface accessible to individuals with different learning styles and abilities, ensuring that the content is presented in a way that is easy to comprehend and navigate?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_016",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_016",
+    "skill": "Accessible video controls",
+    "query": "Here's a challenging semantic retrieval query: \"What UI elements require explicit indication of their interactive status to ensure users can navigate through content using only their input devices?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_017",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_017",
+    "skill": "Caption selection UI",
+    "query": "Here's a challenging semantic retrieval query: \"Ensure that the UI component displays a list of supported audio descriptions and closed captions, while maintaining a consistent and inclusive user interface.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_FRON_019",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_019",
+    "skill": "Responsive OTT player",
+    "query": "Here's a challenging semantic retrieval query: \"How can we ensure that the UI components are accessible and usable even when the screen width is reduced to a very small size, without forcing the user to scroll horizontally?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_001",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_001",
+    "skill": "Test assertions",
+    "query": "Can a validation check confirm that the system meets the specified standards?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_003",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_003",
+    "skill": "Locators",
+    "query": "Can a tool help us figure out what parts of a webpage we should interact with, and automatically wait for things to happen or be ready before we try to do something?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_005",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_005",
+    "skill": "Test isolation",
+    "query": "Here's a challenging semantic retrieval query: \"What is the principle that ensures each test runs autonomously, unaffected by the outcome of other tests?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires a keyword-only search system to accurately retrieve the correct answer.",
+    "content_word_overlap": 0.1111111111111111,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_006",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_006",
+    "skill": "API testing",
+    "query": "Can a tool make HTTP requests to a remote endpoint to check how it responds to certain actions and ensure it's in a consistent condition?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_008",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_008",
+    "skill": "Fixtures",
+    "query": "Can you find the concept of pre-configured test environments that can be easily shared across multiple test cases without having to recreate the necessary infrastructure from scratch?",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_010",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_010",
+    "skill": "Fixture teardown",
+    "query": "Here's a challenging semantic retrieval query: \"What happens to the assets after the test execution is terminated?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the context and meaning behind the query, making it harder for a keyword-only search system to retrieve the correct result.",
+    "content_word_overlap": 0.1,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_012",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_012",
+    "skill": "Negative testing",
+    "query": "Here's a challenging semantic retrieval query: \"What kind of inputs should we deliberately fail to validate to ensure our API doesn't accept anything that's not supposed to be there?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.16666666666666666,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_014",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_014",
+    "skill": "Flaky tests",
+    "query": "Here's a challenging semantic retrieval query: \"What approach can help minimize the inconsistency in test results caused by unpredictable delays in the automation process?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires a keyword-only search system to understand the nuances of the query and retrieve the correct result.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_016",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_016",
+    "skill": "OTT entitlement testing",
+    "query": "Here's a challenging semantic retrieval query: \"What types of users should be tested for API playback, and what scenarios should be covered to ensure a comprehensive test suite?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the query to understand the nuances of the original passage and apply them to a new context, making it a difficult semantic retrieval query.",
+    "content_word_overlap": 0.17647058823529413,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_017",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_017",
+    "skill": "Manifest validation",
+    "query": "Here's a challenging semantic retrieval query: \"How can we ensure that the media files are properly linked to their corresponding metadata and that the system can accurately determine the quality of the connection between the files and the network?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.125,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_019",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_019",
+    "skill": "Caption and audio testing",
+    "query": "Here's a challenging semantic retrieval query: \"Ensure that the required media components are properly identified, matched with the content, and can be accessed in a seamless manner.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reused terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  },
+  {
+    "case_id": "HARD_QA_T_021",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_021",
+    "skill": "OTT device matrix",
+    "query": "Here's a challenging semantic retrieval query: \"What types of factors should be considered when designing a system that accommodates various user interfaces and software applications, taking into account the potential for different user experiences and system vulnerabilities?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+    "content_word_overlap": 0.0,
+    "overlap_target_met": true
+  }
+]

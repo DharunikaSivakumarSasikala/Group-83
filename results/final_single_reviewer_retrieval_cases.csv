@@ -1,0 +1,22 @@
+case_id,role,skill,acceptable_chunk_ids,review_notes,TF-IDF_relevant_rank,TF-IDF_hit_at_5,Embedding_relevant_rank,Embedding_hit_at_5,Hybrid_75T_25E_relevant_rank,Hybrid_75T_25E_hit_at_5,Hybrid_50T_50E_relevant_rank,Hybrid_50T_50E_hit_at_5,Hybrid_25T_75E_relevant_rank,Hybrid_25T_75E_hit_at_5
+HARD_BACK_001,backend_software_engineer,API fundamentals,BACK_001,,1,YES,3,YES,1,YES,1,YES,1,YES
+HARD_BACK_008,backend_software_engineer,Input and resource controls,BACK_008,,1,YES,1,YES,1,YES,1,YES,1,YES
+HARD_BACK_012,backend_software_engineer,Dockerfile layers,BACK_012,,1,YES,1,YES,1,YES,1,YES,1,YES
+HARD_BACK_015,backend_software_engineer,API security testing,BACK_015,Same API-security testing concept; wording is broader than the source.,1,YES,1,YES,1,YES,1,YES,1,YES
+HARD_BACK_022,backend_software_engineer,C++ ownership,BACK_022,,,NO,3,YES,,NO,,NO,,NO
+HARD_BACK_026,backend_software_engineer,Python data structures,BACK_026,,1,YES,1,YES,1,YES,1,YES,1,YES
+HARD_DATA_001,data_engineer,DAG concept,DATA_001,,,NO,2,YES,,NO,,NO,3,YES
+HARD_DATA_006,data_engineer,Scheduling,DATA_006,"Preserves scheduling/incremental-load intent, though logical-date terminology is omitted.",,NO,1,YES,,NO,4,YES,1,YES
+HARD_DATA_010,data_engineer,Database access,DATA_010,,,NO,3,YES,,NO,,NO,5,YES
+HARD_DATA_015,data_engineer,Pipeline alerts,DATA_015,Preserves alerting intent; 'quality standards' is broader than the source examples.,,NO,1,YES,,NO,3,YES,3,YES
+HARD_DATA_020,data_engineer,Metadata migration reconciliation,DATA_020,,,NO,1,YES,5,YES,2,YES,1,YES
+HARD_DEVO_001,devops_sre_engineer,Deployments,DEVO_001,"Preserves Deployment/orchestration intent, although the source also emphasizes ReplicaSets and rollout updates.",,NO,4,YES,,NO,,NO,5,YES
+HARD_DEVO_013,devops_sre_engineer,Alerting rules,DEVO_013,,5,YES,2,YES,3,YES,3,YES,2,YES
+HARD_DEVO_017,devops_sre_engineer,OTT alert design,DEVO_017,,,NO,3,YES,,NO,4,YES,3,YES
+HARD_DEVO_018,devops_sre_engineer,Media workload rollout,DEVO_018,,4,YES,2,YES,4,YES,2,YES,1,YES
+HARD_DEVO_020,devops_sre_engineer,Streaming incident triage,DEVO_020,"Same incident-correlation idea, but some specific signal types are generalized.",3,YES,1,YES,2,YES,1,YES,1,YES
+HARD_FRON_019,frontend_ui_developer,Responsive OTT player,FRON_019,,,NO,,NO,,NO,,NO,,NO
+HARD_QA_T_005,qa_test_engineer,Test isolation,QA_T_005,,1,YES,2,YES,1,YES,1,YES,1,YES
+HARD_QA_T_006,qa_test_engineer,API testing,QA_T_006,,,NO,1,YES,4,YES,4,YES,1,YES
+HARD_QA_T_008,qa_test_engineer,Fixtures,QA_T_008,Preserves reusable setup/service concept; 'pre-configured environments' is somewhat broader.,,NO,1,YES,,NO,,NO,2,YES
+HARD_QA_T_014,qa_test_engineer,Flaky tests,QA_T_014,,,NO,2,YES,,NO,,NO,5,YES

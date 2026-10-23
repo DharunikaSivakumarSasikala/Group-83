@@ -1,0 +1,3 @@
+{"case_id":"EXAMPLE_01","human_score":100,"model_score":95,"cited_chunk_ids":["QA_T_001"],"allowed_chunk_ids":["QA_T_001","QA_T_002"],"expected_citation_ids":["QA_T_001"],"claim_support":[true,true]}
+{"case_id":"EXAMPLE_02","human_score":50,"model_score":60,"cited_chunk_ids":["QA_T_016"],"allowed_chunk_ids":["QA_T_016","QA_T_007"],"expected_citation_ids":["QA_T_016"],"claim_support":[true,false]}
+{"case_id":"EXAMPLE_03","human_score":0,"model_score":20,"cited_chunk_ids":[],"allowed_chunk_ids":["QA_T_005"],"expected_citation_ids":["QA_T_005"],"claim_support":[true]}
