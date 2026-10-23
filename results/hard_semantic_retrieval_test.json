@@ -1,0 +1,3920 @@
+{
+  "experiment": {
+    "knowledge_chunks": 120,
+    "semantic_cases": 60,
+    "cases_per_role": 12,
+    "top_k": 5,
+    "max_content_word_overlap": 0.35,
+    "mean_content_word_overlap": 0.061880389490683606,
+    "median_content_word_overlap": 0.058823529411764705,
+    "cases_meeting_overlap_target": 60,
+    "embedding_model": "nomic-embed-text",
+    "query_generator": "llama3.2:3b",
+    "hybrid_weights": {
+      "Hybrid_75T_25E": {
+        "tfidf": 0.75,
+        "embedding": 0.25
+      },
+      "Hybrid_50T_50E": {
+        "tfidf": 0.5,
+        "embedding": 0.5
+      },
+      "Hybrid_25T_75E": {
+        "tfidf": 0.25,
+        "embedding": 0.75
+      }
+    }
+  },
+  "metrics": {
+    "TF-IDF": {
+      "cases": 60,
+      "hit_at_1": 0.21666666666666667,
+      "hit_at_3": 0.35,
+      "hit_at_5": 0.48333333333333334,
+      "mrr_at_5": 0.30583333333333335,
+      "miss_rate_at_5": 0.5166666666666667,
+      "misses_at_5": 31
+    },
+    "Embedding": {
+      "cases": 60,
+      "hit_at_1": 0.3333333333333333,
+      "hit_at_3": 0.75,
+      "hit_at_5": 0.8666666666666667,
+      "mrr_at_5": 0.5444444444444444,
+      "miss_rate_at_5": 0.13333333333333333,
+      "misses_at_5": 8
+    },
+    "Hybrid_75T_25E": {
+      "cases": 60,
+      "hit_at_1": 0.25,
+      "hit_at_3": 0.4166666666666667,
+      "hit_at_5": 0.5666666666666667,
+      "mrr_at_5": 0.35083333333333333,
+      "miss_rate_at_5": 0.43333333333333335,
+      "misses_at_5": 26
+    },
+    "Hybrid_50T_50E": {
+      "cases": 60,
+      "hit_at_1": 0.26666666666666666,
+      "hit_at_3": 0.5333333333333333,
+      "hit_at_5": 0.7,
+      "mrr_at_5": 0.41888888888888887,
+      "miss_rate_at_5": 0.3,
+      "misses_at_5": 18
+    },
+    "Hybrid_25T_75E": {
+      "cases": 60,
+      "hit_at_1": 0.4,
+      "hit_at_3": 0.6666666666666666,
+      "hit_at_5": 0.8,
+      "mrr_at_5": 0.5394444444444445,
+      "miss_rate_at_5": 0.2,
+      "misses_at_5": 12
+    }
+  },
+  "metrics_by_role": {
+    "backend_software_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr_at_5": 0.5833333333333334,
+        "miss_rate_at_5": 0.3333333333333333,
+        "misses_at_5": 4
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.9166666666666666,
+        "mrr_at_5": 0.6555555555555556,
+        "miss_rate_at_5": 0.08333333333333333,
+        "misses_at_5": 1
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 0.5833333333333334,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr_at_5": 0.625,
+        "miss_rate_at_5": 0.3333333333333333,
+        "misses_at_5": 4
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 0.5833333333333334,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.75,
+        "mrr_at_5": 0.6458333333333334,
+        "miss_rate_at_5": 0.25,
+        "misses_at_5": 3
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 0.5833333333333334,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.6944444444444445,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 2
+      }
+    },
+    "data_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 0.08333333333333333,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.4166666666666667,
+        "mrr_at_5": 0.2041666666666667,
+        "miss_rate_at_5": 0.5833333333333334,
+        "misses_at_5": 7
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.9166666666666666,
+        "hit_at_5": 0.9166666666666666,
+        "mrr_at_5": 0.6805555555555555,
+        "miss_rate_at_5": 0.08333333333333333,
+        "misses_at_5": 1
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 0.08333333333333333,
+        "hit_at_3": 0.16666666666666666,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.19999999999999998,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 6
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 0.08333333333333333,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.3430555555555555,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 2
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 0.4166666666666667,
+        "hit_at_3": 0.75,
+        "hit_at_5": 0.9166666666666666,
+        "mrr_at_5": 0.5791666666666667,
+        "miss_rate_at_5": 0.08333333333333333,
+        "misses_at_5": 1
+      }
+    },
+    "devops_sre_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 0.16666666666666666,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.25972222222222224,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 6
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.5833333333333334,
+        "hit_at_5": 0.9166666666666666,
+        "mrr_at_5": 0.47361111111111115,
+        "miss_rate_at_5": 0.08333333333333333,
+        "misses_at_5": 1
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 0.16666666666666666,
+        "hit_at_3": 0.4166666666666667,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.2847222222222222,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 6
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.5833333333333334,
+        "mrr_at_5": 0.3819444444444444,
+        "miss_rate_at_5": 0.4166666666666667,
+        "misses_at_5": 5
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 0.4166666666666667,
+        "hit_at_3": 0.5833333333333334,
+        "hit_at_5": 0.6666666666666666,
+        "mrr_at_5": 0.5027777777777778,
+        "miss_rate_at_5": 0.3333333333333333,
+        "misses_at_5": 4
+      }
+    },
+    "frontend_ui_developer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 0.08333333333333333,
+        "hit_at_3": 0.08333333333333333,
+        "hit_at_5": 0.3333333333333333,
+        "mrr_at_5": 0.14166666666666666,
+        "miss_rate_at_5": 0.6666666666666666,
+        "misses_at_5": 8
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 0.16666666666666666,
+        "hit_at_3": 0.4166666666666667,
+        "hit_at_5": 0.5833333333333334,
+        "mrr_at_5": 0.3013888888888889,
+        "miss_rate_at_5": 0.4166666666666667,
+        "misses_at_5": 5
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 0.08333333333333333,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.4166666666666667,
+        "mrr_at_5": 0.1763888888888889,
+        "miss_rate_at_5": 0.5833333333333334,
+        "misses_at_5": 7
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 0.08333333333333333,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.21388888888888888,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 6
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 0.16666666666666666,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.5833333333333334,
+        "mrr_at_5": 0.2722222222222222,
+        "miss_rate_at_5": 0.4166666666666667,
+        "misses_at_5": 5
+      }
+    },
+    "qa_test_engineer": {
+      "TF-IDF": {
+        "cases": 12,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.4166666666666667,
+        "hit_at_5": 0.5,
+        "mrr_at_5": 0.34027777777777773,
+        "miss_rate_at_5": 0.5,
+        "misses_at_5": 6
+      },
+      "Embedding": {
+        "cases": 12,
+        "hit_at_1": 0.25,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.611111111111111,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      },
+      "Hybrid_75T_25E": {
+        "cases": 12,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.5833333333333334,
+        "hit_at_5": 0.75,
+        "mrr_at_5": 0.4680555555555555,
+        "miss_rate_at_5": 0.25,
+        "misses_at_5": 3
+      },
+      "Hybrid_50T_50E": {
+        "cases": 12,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.8333333333333334,
+        "mrr_at_5": 0.5097222222222222,
+        "miss_rate_at_5": 0.16666666666666666,
+        "misses_at_5": 2
+      },
+      "Hybrid_25T_75E": {
+        "cases": 12,
+        "hit_at_1": 0.4166666666666667,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 1.0,
+        "mrr_at_5": 0.6486111111111111,
+        "miss_rate_at_5": 0.0,
+        "misses_at_5": 0
+      }
+    }
+  },
+  "timing_seconds": {
+    "tfidf_index_build": 0.7302089589647949,
+    "embedding_document_index": 2.628251082962379,
+    "tfidf_all_queries": 0.008361374959349632,
+    "embedding_all_queries": 1.654957375023514
+  },
+  "cases": [
+    {
+      "case_id": "HARD_BACK_001",
+      "role": "backend_software_engineer",
+      "skill": "API fundamentals",
+      "expected_chunk_id": "BACK_001",
+      "query": "Here's a challenging semantic retrieval query: \"What is the purpose of a standardized format for documenting web APIs that allows developers to grasp the functionality and data exchange without needing to examine the underlying code?\" This query aims to capture the essence of the original passage while using different wording and synonyms, making it harder for a keyword-only search system to retrieve the correct answer.",
+      "content_word_overlap": 0.13333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_010",
+            "BACK_039",
+            "BACK_029",
+            "BACK_016"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "BACK_003",
+            "BACK_005",
+            "BACK_001",
+            "BACK_015",
+            "BACK_002"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_010",
+            "BACK_039",
+            "BACK_029",
+            "BACK_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_010",
+            "BACK_008",
+            "BACK_003",
+            "BACK_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_001",
+            "BACK_003",
+            "BACK_005",
+            "BACK_010",
+            "BACK_008"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_005",
+      "role": "backend_software_engineer",
+      "skill": "API contracts",
+      "expected_chunk_id": "BACK_005",
+      "query": "Here's a difficult semantic retrieval query: \"What feature of a system allows for the separation of data producers and consumers, making it easier to ensure data consistency and facilitating the creation of reusable code?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.15384615384615385,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_030",
+            "BACK_001",
+            "BACK_038",
+            "BACK_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_029",
+            "BACK_030",
+            "BACK_026",
+            "BACK_008"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_030",
+            "BACK_026",
+            "BACK_038",
+            "BACK_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_030",
+            "BACK_026",
+            "BACK_029",
+            "BACK_025"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_005",
+            "BACK_030",
+            "BACK_029",
+            "BACK_026",
+            "BACK_008"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_008",
+      "role": "backend_software_engineer",
+      "skill": "Input and resource controls",
+      "expected_chunk_id": "BACK_008",
+      "query": "Here's a challenging semantic retrieval query: \"What happens when a system doesn't enforce limits on its usage, leading to a surge in CPU, memory, or storage usage that can cause financial penalties?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.25,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_038",
+            "BACK_020",
+            "BACK_016",
+            "BACK_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_019",
+            "BACK_016",
+            "BACK_020",
+            "BACK_040"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_016",
+            "BACK_020",
+            "BACK_038",
+            "BACK_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_016",
+            "BACK_019",
+            "BACK_020",
+            "BACK_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_008",
+            "BACK_019",
+            "BACK_016",
+            "BACK_020",
+            "BACK_040"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_012",
+      "role": "backend_software_engineer",
+      "skill": "Dockerfile layers",
+      "expected_chunk_id": "BACK_012",
+      "query": "Here's a challenging semantic retrieval query: \"When building a new version of a project, it's usually a good idea to update the stable parts first, rather than the parts that are constantly being modified, to minimize the time it takes to rebuild the entire thing.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.16666666666666666,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_038",
+            "BACK_040",
+            "BACK_001",
+            "BACK_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_030",
+            "BACK_005",
+            "BACK_029",
+            "BACK_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_038",
+            "BACK_040",
+            "BACK_030",
+            "BACK_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_038",
+            "BACK_040",
+            "BACK_030",
+            "BACK_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_012",
+            "BACK_030",
+            "BACK_005",
+            "BACK_029",
+            "BACK_009"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_015",
+      "role": "backend_software_engineer",
+      "skill": "API security testing",
+      "expected_chunk_id": "BACK_015",
+      "query": "Can you verify that the backend software engineer's work ensures that the system correctly validates user permissions for specific components and handles invalid input combinations?",
+      "content_word_overlap": 0.14285714285714285,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_008",
+            "BACK_029",
+            "BACK_010",
+            "BACK_018"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_008",
+            "BACK_010",
+            "BACK_007",
+            "BACK_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_008",
+            "BACK_010",
+            "BACK_029",
+            "BACK_018"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_008",
+            "BACK_010",
+            "BACK_029",
+            "BACK_018"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_015",
+            "BACK_008",
+            "BACK_010",
+            "BACK_018",
+            "BACK_029"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_019",
+      "role": "backend_software_engineer",
+      "skill": "C integer safety",
+      "expected_chunk_id": "BACK_019",
+      "query": "Here's a challenging semantic retrieval query: \"When performing calculations, what's the risk of losing data that could compromise the integrity of the system?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the context and nuances of the original passage, making it a difficult semantic retrieval query.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 25,
+          "top5": [
+            "BACK_027",
+            "BACK_028",
+            "BACK_025",
+            "BACK_038",
+            "BACK_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_010",
+            "BACK_035",
+            "BACK_008",
+            "BACK_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 10,
+          "top5": [
+            "BACK_027",
+            "BACK_028",
+            "BACK_025",
+            "BACK_038",
+            "BACK_029"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 8,
+          "top5": [
+            "BACK_028",
+            "BACK_027",
+            "BACK_025",
+            "BACK_029",
+            "BACK_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_019",
+            "BACK_010",
+            "BACK_029",
+            "BACK_028",
+            "BACK_012"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_022",
+      "role": "backend_software_engineer",
+      "skill": "C++ ownership",
+      "expected_chunk_id": "BACK_022",
+      "query": "Here's a challenging semantic retrieval query: \"What approach to memory management in C++ should prioritize the use of managed resources over direct control?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the nuances of memory management in C++ and the importance of prioritizing managed resources.",
+      "content_word_overlap": 0.07692307692307693,
+      "methods": {
+        "TF-IDF": {
+          "rank": 29,
+          "top5": [
+            "BACK_028",
+            "BACK_020",
+            "BACK_016",
+            "BACK_021",
+            "BACK_008"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "BACK_025",
+            "BACK_020",
+            "BACK_022",
+            "BACK_016",
+            "BACK_021"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 14,
+          "top5": [
+            "BACK_028",
+            "BACK_020",
+            "BACK_016",
+            "BACK_021",
+            "BACK_025"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 7,
+          "top5": [
+            "BACK_020",
+            "BACK_028",
+            "BACK_016",
+            "BACK_025",
+            "BACK_021"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 6,
+          "top5": [
+            "BACK_020",
+            "BACK_025",
+            "BACK_028",
+            "BACK_016",
+            "BACK_021"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_026",
+      "role": "backend_software_engineer",
+      "skill": "Python data structures",
+      "expected_chunk_id": "BACK_026",
+      "query": "Here's a challenging semantic retrieval query: \"What data types does our team use to store and manage data in a way that allows for efficient lookup, while also considering the need for fast insertion and deletion?\" This query requires the search system to understand the nuances of data storage and management, and to recognize that the team is looking for data types that balance lookup efficiency with mutability. The use of phrases like \"efficient lookup\" and \"fast insertion and deletion\" requires the search system to have a deep understanding of the technical context and to be able to retrieve the correct information.",
+      "content_word_overlap": 0.13333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_025",
+            "BACK_028",
+            "BACK_014",
+            "BACK_024"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_029",
+            "BACK_008",
+            "BACK_025",
+            "BACK_035"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_025",
+            "BACK_028",
+            "BACK_024",
+            "BACK_029"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_025",
+            "BACK_029",
+            "BACK_024",
+            "BACK_028"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "BACK_026",
+            "BACK_029",
+            "BACK_025",
+            "BACK_008",
+            "BACK_024"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_029",
+      "role": "backend_software_engineer",
+      "skill": "Python mutability",
+      "expected_chunk_id": "BACK_029",
+      "query": "Here's a challenging semantic retrieval query: \"What are the pitfalls of using shared state in a modular system, and how can we ensure data integrity across different parts of the codebase?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the nuances of the concept and retrieve the relevant information.",
+      "content_word_overlap": 0.16666666666666666,
+      "methods": {
+        "TF-IDF": {
+          "rank": 2,
+          "top5": [
+            "BACK_025",
+            "BACK_029",
+            "BACK_038",
+            "BACK_039",
+            "BACK_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "BACK_025",
+            "BACK_029",
+            "BACK_030",
+            "BACK_035",
+            "BACK_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 2,
+          "top5": [
+            "BACK_025",
+            "BACK_029",
+            "BACK_039",
+            "BACK_038",
+            "BACK_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "BACK_025",
+            "BACK_029",
+            "BACK_039",
+            "BACK_038",
+            "BACK_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "BACK_025",
+            "BACK_029",
+            "BACK_030",
+            "BACK_035",
+            "BACK_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_033",
+      "role": "backend_software_engineer",
+      "skill": "Go interfaces",
+      "expected_chunk_id": "BACK_033",
+      "query": "Here's a challenging semantic retrieval query: \"What happens when a new piece of code is added to a system without needing to be explicitly defined?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 35,
+          "top5": [
+            "BACK_022",
+            "BACK_001",
+            "BACK_038",
+            "BACK_016",
+            "BACK_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 23,
+          "top5": [
+            "BACK_029",
+            "BACK_003",
+            "BACK_005",
+            "BACK_030",
+            "BACK_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 25,
+          "top5": [
+            "BACK_022",
+            "BACK_001",
+            "BACK_038",
+            "BACK_016",
+            "BACK_036"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 25,
+          "top5": [
+            "BACK_022",
+            "BACK_001",
+            "BACK_016",
+            "BACK_036",
+            "BACK_038"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 25,
+          "top5": [
+            "BACK_029",
+            "BACK_003",
+            "BACK_005",
+            "BACK_036",
+            "BACK_022"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_036",
+      "role": "backend_software_engineer",
+      "skill": "OTT playback API design",
+      "expected_chunk_id": "BACK_036",
+      "query": "Can a system return a valid content stream along with a detailed breakdown of its validity period and potential issues without revealing the underlying mechanics?",
+      "content_word_overlap": 0.058823529411764705,
+      "methods": {
+        "TF-IDF": {
+          "rank": 2,
+          "top5": [
+            "BACK_017",
+            "BACK_036",
+            "BACK_037",
+            "BACK_001",
+            "BACK_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 5,
+          "top5": [
+            "BACK_037",
+            "BACK_040",
+            "BACK_015",
+            "BACK_008",
+            "BACK_036"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_017",
+            "BACK_037",
+            "BACK_040",
+            "BACK_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "BACK_036",
+            "BACK_037",
+            "BACK_017",
+            "BACK_040",
+            "BACK_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "BACK_037",
+            "BACK_036",
+            "BACK_040",
+            "BACK_015",
+            "BACK_008"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_BACK_040",
+      "role": "backend_software_engineer",
+      "skill": "Playback session resilience",
+      "expected_chunk_id": "BACK_040",
+      "query": "Here's a challenging semantic retrieval query: \"What type of error handling mechanisms should be used in a system that provides a continuous stream of data, to ensure that it can recover from temporary disruptions without losing any valuable information?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 40,
+          "top5": [
+            "BACK_031",
+            "BACK_004",
+            "BACK_011",
+            "BACK_038",
+            "BACK_026"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "BACK_003",
+            "BACK_040",
+            "BACK_031",
+            "BACK_028",
+            "BACK_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 13,
+          "top5": [
+            "BACK_031",
+            "BACK_035",
+            "BACK_004",
+            "BACK_038",
+            "BACK_024"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 4,
+          "top5": [
+            "BACK_031",
+            "BACK_035",
+            "BACK_003",
+            "BACK_040",
+            "BACK_028"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "BACK_031",
+            "BACK_003",
+            "BACK_040",
+            "BACK_035",
+            "BACK_028"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_001",
+      "role": "data_engineer",
+      "skill": "DAG concept",
+      "expected_chunk_id": "DATA_001",
+      "query": "Here's a challenging semantic retrieval query: \"What is the fundamental building block of a scheduled task execution pipeline that can be broken down into individual components and is subject to a predetermined sequence of execution?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 10,
+          "top5": [
+            "DATA_002",
+            "DATA_003",
+            "DATA_015",
+            "DATA_007",
+            "DATA_004"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "DATA_002",
+            "DATA_001",
+            "DATA_006",
+            "DATA_014",
+            "DATA_015"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 10,
+          "top5": [
+            "DATA_002",
+            "DATA_003",
+            "DATA_015",
+            "DATA_007",
+            "DATA_014"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 6,
+          "top5": [
+            "DATA_002",
+            "DATA_003",
+            "DATA_015",
+            "DATA_014",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "DATA_002",
+            "DATA_015",
+            "DATA_001",
+            "DATA_006",
+            "DATA_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_003",
+      "role": "data_engineer",
+      "skill": "Task isolation",
+      "expected_chunk_id": "DATA_003",
+      "query": "Here's a challenging semantic retrieval query: \"When working with a distributed workflow system, what's the best approach to ensure that data is shared between components without relying on shared storage?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.06666666666666667,
+      "methods": {
+        "TF-IDF": {
+          "rank": 2,
+          "top5": [
+            "DATA_006",
+            "DATA_003",
+            "DATA_001",
+            "DATA_020",
+            "DATA_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "DATA_020",
+            "DATA_003",
+            "DATA_016",
+            "DATA_006",
+            "DATA_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 2,
+          "top5": [
+            "DATA_006",
+            "DATA_003",
+            "DATA_001",
+            "DATA_020",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "DATA_006",
+            "DATA_003",
+            "DATA_001",
+            "DATA_020",
+            "DATA_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "DATA_006",
+            "DATA_020",
+            "DATA_003",
+            "DATA_001",
+            "DATA_012"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_004",
+      "role": "data_engineer",
+      "skill": "XCom purpose",
+      "expected_chunk_id": "DATA_004",
+      "query": "Here's a challenging semantic retrieval query: \"How do we facilitate the transfer of limited information between workflow components during a run?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.09090909090909091,
+      "methods": {
+        "TF-IDF": {
+          "rank": 2,
+          "top5": [
+            "DATA_003",
+            "DATA_004",
+            "DATA_001",
+            "DATA_006",
+            "DATA_020"
+          ]
+        },
+        "Embedding": {
+          "rank": 18,
+          "top5": [
+            "DATA_006",
+            "DATA_001",
+            "DATA_003",
+            "DATA_020",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 4,
+          "top5": [
+            "DATA_003",
+            "DATA_001",
+            "DATA_006",
+            "DATA_004",
+            "DATA_020"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 5,
+          "top5": [
+            "DATA_003",
+            "DATA_006",
+            "DATA_001",
+            "DATA_020",
+            "DATA_004"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 9,
+          "top5": [
+            "DATA_003",
+            "DATA_006",
+            "DATA_001",
+            "DATA_020",
+            "DATA_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_006",
+      "role": "data_engineer",
+      "skill": "Scheduling",
+      "expected_chunk_id": "DATA_006",
+      "query": "Here's a challenging semantic retrieval query: \"When should we set up the automated data processing pipeline to run at regular time intervals, taking into account the frequency of data updates and the specific dates when new data becomes available?\" This query aims to capture the essence of the original passage, but uses different wording and synonyms to avoid reusing the source terms. It requires a keyword-only search system to understand the technical meaning behind the query.",
+      "content_word_overlap": 0.06666666666666667,
+      "methods": {
+        "TF-IDF": {
+          "rank": 11,
+          "top5": [
+            "DATA_011",
+            "DATA_007",
+            "DATA_002",
+            "DATA_014",
+            "DATA_015"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_014",
+            "DATA_016",
+            "DATA_019",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 6,
+          "top5": [
+            "DATA_011",
+            "DATA_007",
+            "DATA_002",
+            "DATA_014",
+            "DATA_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 4,
+          "top5": [
+            "DATA_011",
+            "DATA_014",
+            "DATA_007",
+            "DATA_006",
+            "DATA_002"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_006",
+            "DATA_014",
+            "DATA_007",
+            "DATA_011",
+            "DATA_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_008",
+      "role": "data_engineer",
+      "skill": "Failure handling",
+      "expected_chunk_id": "DATA_008",
+      "query": "Can you design a data processing workflow that can detect and recover from data corruption, and ensure that the responsible team member is notified and takes responsibility for the issue?",
+      "content_word_overlap": 0.07142857142857142,
+      "methods": {
+        "TF-IDF": {
+          "rank": 9,
+          "top5": [
+            "DATA_006",
+            "DATA_011",
+            "DATA_019",
+            "DATA_001",
+            "DATA_007"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "DATA_007",
+            "DATA_008",
+            "DATA_020",
+            "DATA_015",
+            "DATA_019"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 6,
+          "top5": [
+            "DATA_006",
+            "DATA_011",
+            "DATA_019",
+            "DATA_007",
+            "DATA_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 4,
+          "top5": [
+            "DATA_007",
+            "DATA_006",
+            "DATA_019",
+            "DATA_008",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "DATA_007",
+            "DATA_008",
+            "DATA_019",
+            "DATA_011",
+            "DATA_006"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_010",
+      "role": "data_engineer",
+      "skill": "Database access",
+      "expected_chunk_id": "DATA_010",
+      "query": "Can you explain how to use a specific protocol to securely pass variables into a query, allowing for the separation of code and data, and ensuring the integrity of the data being transferred?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 13,
+          "top5": [
+            "DATA_002",
+            "DATA_011",
+            "DATA_007",
+            "DATA_005",
+            "DATA_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "DATA_007",
+            "DATA_011",
+            "DATA_010",
+            "DATA_009",
+            "DATA_008"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 11,
+          "top5": [
+            "DATA_002",
+            "DATA_011",
+            "DATA_007",
+            "DATA_009",
+            "DATA_008"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 7,
+          "top5": [
+            "DATA_011",
+            "DATA_007",
+            "DATA_002",
+            "DATA_009",
+            "DATA_008"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 5,
+          "top5": [
+            "DATA_007",
+            "DATA_011",
+            "DATA_009",
+            "DATA_002",
+            "DATA_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_011",
+      "role": "data_engineer",
+      "skill": "Data validation",
+      "expected_chunk_id": "DATA_011",
+      "query": "Can you verify that the data conforms to the standard format, including the correct number of rows, no missing values, and values within the specified limits?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 5,
+          "top5": [
+            "DATA_005",
+            "DATA_010",
+            "DATA_004",
+            "DATA_015",
+            "DATA_011"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_020",
+            "DATA_005",
+            "DATA_009",
+            "DATA_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 5,
+          "top5": [
+            "DATA_005",
+            "DATA_010",
+            "DATA_004",
+            "DATA_015",
+            "DATA_011"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "DATA_005",
+            "DATA_011",
+            "DATA_010",
+            "DATA_004",
+            "DATA_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_011",
+            "DATA_005",
+            "DATA_010",
+            "DATA_020",
+            "DATA_009"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_013",
+      "role": "data_engineer",
+      "skill": "Backfills",
+      "expected_chunk_id": "DATA_013",
+      "query": "Here's a challenging semantic retrieval query: \"Design a mechanism that ensures data consistency across multiple runs, without causing data loss or duplication, and that can handle changes to the data without reapplying the same changes multiple times.\" This query requires the retrieval system to understand the nuances of the original passage and convey the same technical meaning using different wording and synonyms, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.08333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 4,
+          "top5": [
+            "DATA_012",
+            "DATA_006",
+            "DATA_011",
+            "DATA_013",
+            "DATA_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "DATA_007",
+            "DATA_020",
+            "DATA_013",
+            "DATA_016",
+            "DATA_012"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 4,
+          "top5": [
+            "DATA_012",
+            "DATA_006",
+            "DATA_011",
+            "DATA_013",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 4,
+          "top5": [
+            "DATA_012",
+            "DATA_007",
+            "DATA_011",
+            "DATA_013",
+            "DATA_020"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 4,
+          "top5": [
+            "DATA_012",
+            "DATA_007",
+            "DATA_020",
+            "DATA_013",
+            "DATA_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_015",
+      "role": "data_engineer",
+      "skill": "Pipeline alerts",
+      "expected_chunk_id": "DATA_015",
+      "query": "Can you detect when a data processing stage is consistently experiencing unmet performance expectations, such as prolonged delays or unfulfilled quality standards?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 16,
+          "top5": [
+            "DATA_019",
+            "DATA_011",
+            "DATA_007",
+            "DATA_002",
+            "DATA_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_015",
+            "DATA_014",
+            "DATA_019",
+            "DATA_011",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 9,
+          "top5": [
+            "DATA_019",
+            "DATA_011",
+            "DATA_007",
+            "DATA_008",
+            "DATA_006"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "DATA_019",
+            "DATA_011",
+            "DATA_015",
+            "DATA_014",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "DATA_019",
+            "DATA_011",
+            "DATA_015",
+            "DATA_014",
+            "DATA_007"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_017",
+      "role": "data_engineer",
+      "skill": "Series and episode mapping",
+      "expected_chunk_id": "DATA_017",
+      "query": "Here's a challenging semantic retrieval query: \"What is the requirement for maintaining a consistent structure of content within a broadcast schedule, ensuring that repeated transmissions do not inadvertently alter the sequence of events or disconnect individual segments from their parent units?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.06666666666666667,
+      "methods": {
+        "TF-IDF": {
+          "rank": 9,
+          "top5": [
+            "DATA_001",
+            "DATA_018",
+            "DATA_015",
+            "DATA_003",
+            "DATA_006"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_013",
+            "DATA_018",
+            "DATA_016",
+            "DATA_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 6,
+          "top5": [
+            "DATA_001",
+            "DATA_018",
+            "DATA_015",
+            "DATA_006",
+            "DATA_003"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "DATA_001",
+            "DATA_018",
+            "DATA_017",
+            "DATA_006",
+            "DATA_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_017",
+            "DATA_018",
+            "DATA_001",
+            "DATA_006",
+            "DATA_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_018",
+      "role": "data_engineer",
+      "skill": "OTT event pipelines",
+      "expected_chunk_id": "DATA_018",
+      "query": "Here's a challenging semantic retrieval query: \"What specific configurations need to be set up for data to be successfully transmitted to Kafka topics and then handled by the system, without any issues with data structure, sequence, or re-execution?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.13333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_002",
+            "DATA_008",
+            "DATA_011",
+            "DATA_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_016",
+            "DATA_012",
+            "DATA_007",
+            "DATA_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_002",
+            "DATA_011",
+            "DATA_008",
+            "DATA_003"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_002",
+            "DATA_011",
+            "DATA_007",
+            "DATA_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_018",
+            "DATA_016",
+            "DATA_002",
+            "DATA_007",
+            "DATA_012"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DATA_020",
+      "role": "data_engineer",
+      "skill": "Metadata migration reconciliation",
+      "expected_chunk_id": "DATA_020",
+      "query": "Here's a challenging semantic retrieval query: \"Ensure that the data transfer process accurately accounts for discrepancies between the original data and the updated data, while maintaining a detailed log of errors and providing a subset of the data for testing purposes.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.058823529411764705,
+      "methods": {
+        "TF-IDF": {
+          "rank": 10,
+          "top5": [
+            "DATA_011",
+            "DATA_007",
+            "DATA_003",
+            "DATA_002",
+            "DATA_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_011",
+            "DATA_016",
+            "DATA_012",
+            "DATA_007"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 5,
+          "top5": [
+            "DATA_011",
+            "DATA_007",
+            "DATA_012",
+            "DATA_002",
+            "DATA_020"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "DATA_011",
+            "DATA_020",
+            "DATA_007",
+            "DATA_012",
+            "DATA_002"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DATA_020",
+            "DATA_011",
+            "DATA_007",
+            "DATA_012",
+            "DATA_002"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_001",
+      "role": "devops_sre_engineer",
+      "skill": "Deployments",
+      "expected_chunk_id": "DEVO_001",
+      "query": "Here's a challenging semantic retrieval query: \"What is the primary mechanism by which a cluster of containers is orchestrated to ensure a consistent number of instances of a given application, while allowing for the addition or removal of instances as needed?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 7,
+          "top5": [
+            "DEVO_007",
+            "DEVO_006",
+            "DEVO_008",
+            "DEVO_010",
+            "DEVO_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 4,
+          "top5": [
+            "DEVO_007",
+            "DEVO_008",
+            "DEVO_003",
+            "DEVO_001",
+            "DEVO_004"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 7,
+          "top5": [
+            "DEVO_007",
+            "DEVO_008",
+            "DEVO_006",
+            "DEVO_003",
+            "DEVO_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 7,
+          "top5": [
+            "DEVO_007",
+            "DEVO_008",
+            "DEVO_003",
+            "DEVO_009",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 5,
+          "top5": [
+            "DEVO_007",
+            "DEVO_008",
+            "DEVO_003",
+            "DEVO_009",
+            "DEVO_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_003",
+      "role": "devops_sre_engineer",
+      "skill": "Services",
+      "expected_chunk_id": "DEVO_003",
+      "query": "Here's a challenging semantic retrieval query: \"What happens to a deployment of a workload when the underlying virtual machines are swapped out?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 6,
+          "top5": [
+            "DEVO_002",
+            "DEVO_006",
+            "DEVO_001",
+            "DEVO_007",
+            "DEVO_018"
+          ]
+        },
+        "Embedding": {
+          "rank": 12,
+          "top5": [
+            "DEVO_002",
+            "DEVO_018",
+            "DEVO_001",
+            "DEVO_007",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 13,
+          "top5": [
+            "DEVO_002",
+            "DEVO_001",
+            "DEVO_018",
+            "DEVO_007",
+            "DEVO_006"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 13,
+          "top5": [
+            "DEVO_002",
+            "DEVO_001",
+            "DEVO_018",
+            "DEVO_007",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 12,
+          "top5": [
+            "DEVO_002",
+            "DEVO_018",
+            "DEVO_001",
+            "DEVO_007",
+            "DEVO_020"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_004",
+      "role": "devops_sre_engineer",
+      "skill": "ConfigMaps",
+      "expected_chunk_id": "DEVO_004",
+      "query": "Here's a challenging semantic retrieval query: \"What is the purpose of a centralized repository for sensitive data that allows teams to manage distinct settings for different applications?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 8,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_008",
+            "DEVO_011",
+            "DEVO_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 5,
+          "top5": [
+            "DEVO_019",
+            "DEVO_007",
+            "DEVO_005",
+            "DEVO_002",
+            "DEVO_004"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 8,
+          "top5": [
+            "DEVO_019",
+            "DEVO_006",
+            "DEVO_008",
+            "DEVO_011",
+            "DEVO_007"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 7,
+          "top5": [
+            "DEVO_019",
+            "DEVO_006",
+            "DEVO_008",
+            "DEVO_007",
+            "DEVO_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 7,
+          "top5": [
+            "DEVO_019",
+            "DEVO_007",
+            "DEVO_008",
+            "DEVO_006",
+            "DEVO_005"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_006",
+      "role": "devops_sre_engineer",
+      "skill": "Secret access",
+      "expected_chunk_id": "DEVO_006",
+      "query": "Here's a challenging semantic retrieval query: \"What measures should we take to minimize the risk of sensitive data being compromised by limiting the scope of our system's configuration files and logs?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.13333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_016",
+            "DEVO_010"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "DEVO_019",
+            "DEVO_006",
+            "DEVO_020",
+            "DEVO_004",
+            "DEVO_005"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_016",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_004",
+            "DEVO_016",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_006",
+            "DEVO_019",
+            "DEVO_004",
+            "DEVO_020",
+            "DEVO_005"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_008",
+      "role": "devops_sre_engineer",
+      "skill": "Dockerfile purpose",
+      "expected_chunk_id": "DEVO_008",
+      "query": "Here's a challenging semantic retrieval query: \"What is the configuration tool used to orchestrate multiple virtualized environments, allowing for the creation of a self-contained package that can be easily deployed and managed?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding the reuse of source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 10,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_006",
+            "DEVO_009",
+            "DEVO_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 5,
+          "top5": [
+            "DEVO_001",
+            "DEVO_004",
+            "DEVO_002",
+            "DEVO_007",
+            "DEVO_008"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 8,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_009",
+            "DEVO_006",
+            "DEVO_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 8,
+          "top5": [
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_009",
+            "DEVO_001",
+            "DEVO_002"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 7,
+          "top5": [
+            "DEVO_004",
+            "DEVO_001",
+            "DEVO_019",
+            "DEVO_009",
+            "DEVO_002"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_010",
+      "role": "devops_sre_engineer",
+      "skill": "Compose diagnosis",
+      "expected_chunk_id": "DEVO_010",
+      "query": "Here's a challenging semantic retrieval query: \"What tasks can we perform on a live application to troubleshoot its behavior?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the query system to understand the context and intent behind the query, making it more difficult for a keyword-only search system.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 11,
+          "top5": [
+            "DEVO_006",
+            "DEVO_003",
+            "DEVO_009",
+            "DEVO_017",
+            "DEVO_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 5,
+          "top5": [
+            "DEVO_020",
+            "DEVO_014",
+            "DEVO_017",
+            "DEVO_013",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 8,
+          "top5": [
+            "DEVO_017",
+            "DEVO_003",
+            "DEVO_009",
+            "DEVO_006",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 8,
+          "top5": [
+            "DEVO_017",
+            "DEVO_003",
+            "DEVO_009",
+            "DEVO_006",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 7,
+          "top5": [
+            "DEVO_017",
+            "DEVO_020",
+            "DEVO_014",
+            "DEVO_009",
+            "DEVO_003"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_011",
+      "role": "devops_sre_engineer",
+      "skill": "Time-series model",
+      "expected_chunk_id": "DEVO_011",
+      "query": "Here's a challenging semantic retrieval query: \"How do we manage the collection of numerical observations with associated attributes, where each observation is tied to a specific point in time?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.08333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_006",
+            "DEVO_018",
+            "DEVO_004",
+            "DEVO_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_014",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_018",
+            "DEVO_006",
+            "DEVO_012",
+            "DEVO_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_018",
+            "DEVO_016"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_011",
+            "DEVO_012",
+            "DEVO_013",
+            "DEVO_016",
+            "DEVO_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_013",
+      "role": "devops_sre_engineer",
+      "skill": "Alerting rules",
+      "expected_chunk_id": "DEVO_013",
+      "query": "Here's a challenging semantic retrieval query that preserves the technical meaning of the original passage: \"What triggers a notification when a condition is met in a time-based data collection system?\" This query uses different wording and synonyms to convey the same idea as the original passage, without reusing the forbidden terms. It also avoids mentioning the chunk ID, source title, document title, or the task itself, making it a difficult query for a keyword-only search system.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 5,
+          "top5": [
+            "DEVO_011",
+            "DEVO_014",
+            "DEVO_012",
+            "DEVO_016",
+            "DEVO_013"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "DEVO_014",
+            "DEVO_013",
+            "DEVO_017",
+            "DEVO_020",
+            "DEVO_012"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 3,
+          "top5": [
+            "DEVO_011",
+            "DEVO_014",
+            "DEVO_013",
+            "DEVO_012",
+            "DEVO_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "DEVO_014",
+            "DEVO_011",
+            "DEVO_013",
+            "DEVO_012",
+            "DEVO_016"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "DEVO_014",
+            "DEVO_013",
+            "DEVO_011",
+            "DEVO_017",
+            "DEVO_020"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_015",
+      "role": "devops_sre_engineer",
+      "skill": "Operational resilience",
+      "expected_chunk_id": "DEVO_015",
+      "query": "Can you identify the process of implementing a new update that is not yet fully functional, and which allows for a quick return to a previous state if needed?",
+      "content_word_overlap": 0.06666666666666667,
+      "methods": {
+        "TF-IDF": {
+          "rank": 3,
+          "top5": [
+            "DEVO_010",
+            "DEVO_002",
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_002",
+            "DEVO_001",
+            "DEVO_018",
+            "DEVO_010"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 3,
+          "top5": [
+            "DEVO_010",
+            "DEVO_002",
+            "DEVO_015",
+            "DEVO_018",
+            "DEVO_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "DEVO_002",
+            "DEVO_015",
+            "DEVO_010",
+            "DEVO_018",
+            "DEVO_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_015",
+            "DEVO_002",
+            "DEVO_010",
+            "DEVO_018",
+            "DEVO_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_017",
+      "role": "devops_sre_engineer",
+      "skill": "OTT alert design",
+      "expected_chunk_id": "DEVO_017",
+      "query": "Here's a challenging semantic retrieval query: \"When monitoring system performance, what specific metrics should be highlighted to indicate a potential issue, and how can these be tied to a specific service, geographic location, and set of predefined procedures?\" This query aims to capture the essence of the original passage while using different wording and synonyms, making it harder for a keyword-only search system to retrieve the correct result.",
+      "content_word_overlap": 0.05,
+      "methods": {
+        "TF-IDF": {
+          "rank": 12,
+          "top5": [
+            "DEVO_016",
+            "DEVO_004",
+            "DEVO_019",
+            "DEVO_010",
+            "DEVO_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "DEVO_020",
+            "DEVO_016",
+            "DEVO_017",
+            "DEVO_014",
+            "DEVO_013"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 8,
+          "top5": [
+            "DEVO_016",
+            "DEVO_004",
+            "DEVO_010",
+            "DEVO_012",
+            "DEVO_011"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 4,
+          "top5": [
+            "DEVO_016",
+            "DEVO_020",
+            "DEVO_012",
+            "DEVO_017",
+            "DEVO_011"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "DEVO_016",
+            "DEVO_020",
+            "DEVO_017",
+            "DEVO_012",
+            "DEVO_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_018",
+      "role": "devops_sre_engineer",
+      "skill": "Media workload rollout",
+      "expected_chunk_id": "DEVO_018",
+      "query": "Here's a challenging semantic retrieval query: \"As a process becomes operational, it's essential to verify its performance, monitor its load, and incrementally introduce it to production while maintaining a safety net to revert to a previous state if issues arise.\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing the source terms. It requires a keyword-only search system to accurately retrieve the relevant information.",
+      "content_word_overlap": 0.0625,
+      "methods": {
+        "TF-IDF": {
+          "rank": 4,
+          "top5": [
+            "DEVO_006",
+            "DEVO_010",
+            "DEVO_002",
+            "DEVO_018",
+            "DEVO_015"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "DEVO_014",
+            "DEVO_018",
+            "DEVO_013",
+            "DEVO_015",
+            "DEVO_020"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 4,
+          "top5": [
+            "DEVO_010",
+            "DEVO_006",
+            "DEVO_002",
+            "DEVO_018",
+            "DEVO_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "DEVO_010",
+            "DEVO_018",
+            "DEVO_002",
+            "DEVO_015",
+            "DEVO_006"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_018",
+            "DEVO_002",
+            "DEVO_015",
+            "DEVO_014",
+            "DEVO_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_DEVO_020",
+      "role": "devops_sre_engineer",
+      "skill": "Streaming incident triage",
+      "expected_chunk_id": "DEVO_020",
+      "query": "Here's a challenging semantic retrieval query: \"When analyzing player complaints, can we link the timing of their issues to the performance of our backend services, network latency, and data storage, to better understand the root cause of the problem?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.11764705882352941,
+      "methods": {
+        "TF-IDF": {
+          "rank": 3,
+          "top5": [
+            "DEVO_007",
+            "DEVO_003",
+            "DEVO_020",
+            "DEVO_006",
+            "DEVO_012"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_014",
+            "DEVO_013"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 2,
+          "top5": [
+            "DEVO_007",
+            "DEVO_020",
+            "DEVO_003",
+            "DEVO_016",
+            "DEVO_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_007",
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_003"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "DEVO_020",
+            "DEVO_017",
+            "DEVO_016",
+            "DEVO_007",
+            "DEVO_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_001",
+      "role": "frontend_ui_developer",
+      "skill": "Semantic HTML",
+      "expected_chunk_id": "FRON_001",
+      "query": "Here's a challenging semantic retrieval query: \"What feature of an HTML component enables it to convey meaning to screen readers and other assistive tools, thereby enhancing the user experience?\" This query requires the retrieval system to understand the concept of semantic meaning and its relationship with assistive technologies, while using different wording and synonyms to avoid direct reuse of source terms.",
+      "content_word_overlap": 0.2857142857142857,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_007",
+            "FRON_003",
+            "FRON_018"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_013",
+            "FRON_003",
+            "FRON_006",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_007",
+            "FRON_003",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_003",
+            "FRON_007",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_003",
+            "FRON_013",
+            "FRON_009"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_003",
+      "role": "frontend_ui_developer",
+      "skill": "Image alternatives",
+      "expected_chunk_id": "FRON_003",
+      "query": "Here's a challenging semantic retrieval query: \"What type of visual content should be stripped of supplementary text to prevent it from interfering with screen readers?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the nuances of the original passage and apply them to a new context.",
+      "content_word_overlap": 0.15384615384615385,
+      "methods": {
+        "TF-IDF": {
+          "rank": 4,
+          "top5": [
+            "FRON_005",
+            "FRON_008",
+            "FRON_001",
+            "FRON_003",
+            "FRON_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_003",
+            "FRON_009",
+            "FRON_010"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_003",
+            "FRON_008",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_003",
+            "FRON_009",
+            "FRON_008"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_003",
+            "FRON_009",
+            "FRON_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_004",
+      "role": "frontend_ui_developer",
+      "skill": "Keyboard access",
+      "expected_chunk_id": "FRON_004",
+      "query": "Here's a challenging semantic retrieval query: \"How can we ensure that users can control the application with only their input devices, and that the interface responds in a predictable and coherent manner?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 8,
+          "top5": [
+            "FRON_005",
+            "FRON_002",
+            "FRON_001",
+            "FRON_009",
+            "FRON_010"
+          ]
+        },
+        "Embedding": {
+          "rank": 10,
+          "top5": [
+            "FRON_005",
+            "FRON_009",
+            "FRON_001",
+            "FRON_015",
+            "FRON_012"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 12,
+          "top5": [
+            "FRON_005",
+            "FRON_002",
+            "FRON_001",
+            "FRON_009",
+            "FRON_010"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 12,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_002",
+            "FRON_010"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 11,
+          "top5": [
+            "FRON_005",
+            "FRON_009",
+            "FRON_001",
+            "FRON_010",
+            "FRON_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_006",
+      "role": "frontend_ui_developer",
+      "skill": "ARIA use",
+      "expected_chunk_id": "FRON_006",
+      "query": "Here's a challenging semantic retrieval query: \"When building a user interface, what's the best approach to ensure that assistive technologies can understand the purpose of a specific interactive component, rather than forcing a generic interpretation?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It also requires the search system to understand the nuances of the concept and the context in which it's being applied.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 11,
+          "top5": [
+            "FRON_001",
+            "FRON_007",
+            "FRON_005",
+            "FRON_002",
+            "FRON_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 11,
+          "top5": [
+            "FRON_001",
+            "FRON_013",
+            "FRON_015",
+            "FRON_003",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 14,
+          "top5": [
+            "FRON_001",
+            "FRON_007",
+            "FRON_005",
+            "FRON_003",
+            "FRON_004"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 12,
+          "top5": [
+            "FRON_001",
+            "FRON_007",
+            "FRON_005",
+            "FRON_003",
+            "FRON_013"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 11,
+          "top5": [
+            "FRON_001",
+            "FRON_013",
+            "FRON_003",
+            "FRON_005",
+            "FRON_009"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_008",
+      "role": "frontend_ui_developer",
+      "skill": "Contrast",
+      "expected_chunk_id": "FRON_008",
+      "query": "Here's a challenging semantic retrieval query: \"What minimum visual separation is needed between font sizes to meet the accessibility guidelines for digital interfaces, considering the impact of font size on readability?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 14,
+          "top5": [
+            "FRON_005",
+            "FRON_015",
+            "FRON_001",
+            "FRON_009",
+            "FRON_019"
+          ]
+        },
+        "Embedding": {
+          "rank": 4,
+          "top5": [
+            "FRON_015",
+            "FRON_005",
+            "FRON_001",
+            "FRON_008",
+            "FRON_013"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 10,
+          "top5": [
+            "FRON_005",
+            "FRON_015",
+            "FRON_001",
+            "FRON_009",
+            "FRON_011"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 6,
+          "top5": [
+            "FRON_005",
+            "FRON_015",
+            "FRON_001",
+            "FRON_009",
+            "FRON_011"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 5,
+          "top5": [
+            "FRON_005",
+            "FRON_015",
+            "FRON_001",
+            "FRON_009",
+            "FRON_008"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_009",
+      "role": "frontend_ui_developer",
+      "skill": "Focus order",
+      "expected_chunk_id": "FRON_009",
+      "query": "Here's a challenging semantic retrieval query: \"Arrange elements in a way that maintains usability and logical flow when the user's path impacts the overall interaction experience.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.08333333333333333,
+      "methods": {
+        "TF-IDF": {
+          "rank": 6,
+          "top5": [
+            "FRON_005",
+            "FRON_018",
+            "FRON_004",
+            "FRON_001",
+            "FRON_014"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_013",
+            "FRON_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 4,
+          "top5": [
+            "FRON_005",
+            "FRON_018",
+            "FRON_001",
+            "FRON_009",
+            "FRON_014"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_014",
+            "FRON_018"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_014",
+            "FRON_013"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_011",
+      "role": "frontend_ui_developer",
+      "skill": "CSS accessibility",
+      "expected_chunk_id": "FRON_011",
+      "query": "Here's a challenging semantic retrieval query: \"What design principles should be followed to ensure that visual cues remain intact when implementing visual styling?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires a keyword-only search system to understand the nuances of the query and retrieve the correct result.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 13,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_019",
+            "FRON_002",
+            "FRON_009"
+          ]
+        },
+        "Embedding": {
+          "rank": 5,
+          "top5": [
+            "FRON_001",
+            "FRON_009",
+            "FRON_005",
+            "FRON_003",
+            "FRON_011"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 9,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_003",
+            "FRON_008"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 5,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_003",
+            "FRON_011"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 5,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_009",
+            "FRON_003",
+            "FRON_011"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_012",
+      "role": "frontend_ui_developer",
+      "skill": "JavaScript accessibility",
+      "expected_chunk_id": "FRON_012",
+      "query": "Here's a challenging semantic retrieval query: \"When implementing UI components, what specific attributes must be declared to ensure proper interaction with assistive technologies?\" This query aims to capture the essence of the original passage while using different wording and synonyms, making it harder for a keyword-only search system to retrieve the correct answer.",
+      "content_word_overlap": 0.07692307692307693,
+      "methods": {
+        "TF-IDF": {
+          "rank": 4,
+          "top5": [
+            "FRON_001",
+            "FRON_007",
+            "FRON_017",
+            "FRON_012",
+            "FRON_009"
+          ]
+        },
+        "Embedding": {
+          "rank": 7,
+          "top5": [
+            "FRON_001",
+            "FRON_013",
+            "FRON_009",
+            "FRON_015",
+            "FRON_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 5,
+          "top5": [
+            "FRON_001",
+            "FRON_007",
+            "FRON_013",
+            "FRON_009",
+            "FRON_012"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 5,
+          "top5": [
+            "FRON_001",
+            "FRON_013",
+            "FRON_007",
+            "FRON_009",
+            "FRON_012"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 6,
+          "top5": [
+            "FRON_001",
+            "FRON_013",
+            "FRON_009",
+            "FRON_007",
+            "FRON_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_014",
+      "role": "frontend_ui_developer",
+      "skill": "Plain language",
+      "expected_chunk_id": "FRON_014",
+      "query": "Here's a challenging semantic retrieval query: \"What design elements can be used to make the interface accessible to individuals with different learning styles and abilities, ensuring that the content is presented in a way that is easy to comprehend and navigate?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 15,
+          "top5": [
+            "FRON_012",
+            "FRON_007",
+            "FRON_005",
+            "FRON_001",
+            "FRON_016"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "FRON_001",
+            "FRON_014",
+            "FRON_013",
+            "FRON_009",
+            "FRON_003"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 9,
+          "top5": [
+            "FRON_012",
+            "FRON_007",
+            "FRON_005",
+            "FRON_001",
+            "FRON_016"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 8,
+          "top5": [
+            "FRON_001",
+            "FRON_012",
+            "FRON_005",
+            "FRON_007",
+            "FRON_013"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 5,
+          "top5": [
+            "FRON_001",
+            "FRON_012",
+            "FRON_013",
+            "FRON_005",
+            "FRON_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_016",
+      "role": "frontend_ui_developer",
+      "skill": "Accessible video controls",
+      "expected_chunk_id": "FRON_016",
+      "query": "Here's a challenging semantic retrieval query: \"What UI elements require explicit indication of their interactive status to ensure users can navigate through content using only their input devices?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 17,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_010",
+            "FRON_002",
+            "FRON_004"
+          ]
+        },
+        "Embedding": {
+          "rank": 10,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_004",
+            "FRON_015",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 11,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_010",
+            "FRON_004",
+            "FRON_002"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 11,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_004",
+            "FRON_010",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 10,
+          "top5": [
+            "FRON_001",
+            "FRON_005",
+            "FRON_004",
+            "FRON_009",
+            "FRON_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_017",
+      "role": "frontend_ui_developer",
+      "skill": "Caption selection UI",
+      "expected_chunk_id": "FRON_017",
+      "query": "Here's a challenging semantic retrieval query: \"Ensure that the UI component displays a list of supported audio descriptions and closed captions, while maintaining a consistent and inclusive user interface.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 5,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_016",
+            "FRON_009",
+            "FRON_017"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_001",
+            "FRON_005",
+            "FRON_009",
+            "FRON_013"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 3,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_017",
+            "FRON_016",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "FRON_005",
+            "FRON_017",
+            "FRON_001",
+            "FRON_009",
+            "FRON_016"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "FRON_017",
+            "FRON_001",
+            "FRON_005",
+            "FRON_009",
+            "FRON_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_FRON_019",
+      "role": "frontend_ui_developer",
+      "skill": "Responsive OTT player",
+      "expected_chunk_id": "FRON_019",
+      "query": "Here's a challenging semantic retrieval query: \"How can we ensure that the UI components are accessible and usable even when the screen width is reduced to a very small size, without forcing the user to scroll horizontally?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 19,
+          "top5": [
+            "FRON_005",
+            "FRON_009",
+            "FRON_016",
+            "FRON_001",
+            "FRON_017"
+          ]
+        },
+        "Embedding": {
+          "rank": 13,
+          "top5": [
+            "FRON_015",
+            "FRON_001",
+            "FRON_005",
+            "FRON_010",
+            "FRON_009"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 14,
+          "top5": [
+            "FRON_005",
+            "FRON_009",
+            "FRON_001",
+            "FRON_016",
+            "FRON_015"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 13,
+          "top5": [
+            "FRON_005",
+            "FRON_009",
+            "FRON_001",
+            "FRON_015",
+            "FRON_016"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 13,
+          "top5": [
+            "FRON_005",
+            "FRON_001",
+            "FRON_015",
+            "FRON_009",
+            "FRON_010"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_001",
+      "role": "qa_test_engineer",
+      "skill": "Test assertions",
+      "expected_chunk_id": "QA_T_001",
+      "query": "Can a validation check confirm that the system meets the specified standards?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 3,
+          "top5": [
+            "QA_T_017",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_002",
+            "QA_T_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 3,
+          "top5": [
+            "QA_T_017",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_019",
+            "QA_T_018"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 3,
+          "top5": [
+            "QA_T_017",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_019",
+            "QA_T_018"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "QA_T_017",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_019",
+            "QA_T_018"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 3,
+          "top5": [
+            "QA_T_017",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_019",
+            "QA_T_018"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_003",
+      "role": "qa_test_engineer",
+      "skill": "Locators",
+      "expected_chunk_id": "QA_T_003",
+      "query": "Can a tool help us figure out what parts of a webpage we should interact with, and automatically wait for things to happen or be ready before we try to do something?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 4,
+          "top5": [
+            "QA_T_002",
+            "QA_T_015",
+            "QA_T_001",
+            "QA_T_003",
+            "QA_T_004"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_002",
+            "QA_T_003",
+            "QA_T_006",
+            "QA_T_004",
+            "QA_T_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 3,
+          "top5": [
+            "QA_T_002",
+            "QA_T_015",
+            "QA_T_003",
+            "QA_T_006",
+            "QA_T_004"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_002",
+            "QA_T_003",
+            "QA_T_006",
+            "QA_T_004",
+            "QA_T_014"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_002",
+            "QA_T_003",
+            "QA_T_006",
+            "QA_T_004",
+            "QA_T_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_005",
+      "role": "qa_test_engineer",
+      "skill": "Test isolation",
+      "expected_chunk_id": "QA_T_005",
+      "query": "Here's a challenging semantic retrieval query: \"What is the principle that ensures each test runs autonomously, unaffected by the outcome of other tests?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires a keyword-only search system to accurately retrieve the correct answer.",
+      "content_word_overlap": 0.1111111111111111,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_011",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_009"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_013",
+            "QA_T_005",
+            "QA_T_001",
+            "QA_T_015",
+            "QA_T_014"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_011",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_001",
+            "QA_T_011",
+            "QA_T_013",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_005",
+            "QA_T_013",
+            "QA_T_001",
+            "QA_T_011",
+            "QA_T_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_006",
+      "role": "qa_test_engineer",
+      "skill": "API testing",
+      "expected_chunk_id": "QA_T_006",
+      "query": "Can a tool make HTTP requests to a remote endpoint to check how it responds to certain actions and ensure it's in a consistent condition?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 8,
+          "top5": [
+            "QA_T_013",
+            "QA_T_017",
+            "QA_T_001",
+            "QA_T_002",
+            "QA_T_003"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_013",
+            "QA_T_012",
+            "QA_T_017"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 4,
+          "top5": [
+            "QA_T_013",
+            "QA_T_017",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_007"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 4,
+          "top5": [
+            "QA_T_013",
+            "QA_T_017",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_007"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_006",
+            "QA_T_013",
+            "QA_T_017",
+            "QA_T_001",
+            "QA_T_007"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_008",
+      "role": "qa_test_engineer",
+      "skill": "Fixtures",
+      "expected_chunk_id": "QA_T_008",
+      "query": "Can you find the concept of pre-configured test environments that can be easily shared across multiple test cases without having to recreate the necessary infrastructure from scratch?",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 14,
+          "top5": [
+            "QA_T_015",
+            "QA_T_011",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_008",
+            "QA_T_015",
+            "QA_T_018",
+            "QA_T_009",
+            "QA_T_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 10,
+          "top5": [
+            "QA_T_015",
+            "QA_T_011",
+            "QA_T_006",
+            "QA_T_001",
+            "QA_T_005"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 7,
+          "top5": [
+            "QA_T_015",
+            "QA_T_006",
+            "QA_T_011",
+            "QA_T_001",
+            "QA_T_005"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_015",
+            "QA_T_008",
+            "QA_T_006",
+            "QA_T_018",
+            "QA_T_005"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_010",
+      "role": "qa_test_engineer",
+      "skill": "Fixture teardown",
+      "expected_chunk_id": "QA_T_010",
+      "query": "Here's a challenging semantic retrieval query: \"What happens to the assets after the test execution is terminated?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the search system to understand the context and meaning behind the query, making it harder for a keyword-only search system to retrieve the correct result.",
+      "content_word_overlap": 0.1,
+      "methods": {
+        "TF-IDF": {
+          "rank": 6,
+          "top5": [
+            "QA_T_005",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_016",
+            "QA_T_009"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_013",
+            "QA_T_010",
+            "QA_T_015",
+            "QA_T_007",
+            "QA_T_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 6,
+          "top5": [
+            "QA_T_005",
+            "QA_T_001",
+            "QA_T_016",
+            "QA_T_006",
+            "QA_T_013"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 3,
+          "top5": [
+            "QA_T_005",
+            "QA_T_013",
+            "QA_T_010",
+            "QA_T_001",
+            "QA_T_016"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_013",
+            "QA_T_010",
+            "QA_T_005",
+            "QA_T_016",
+            "QA_T_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_012",
+      "role": "qa_test_engineer",
+      "skill": "Negative testing",
+      "expected_chunk_id": "QA_T_012",
+      "query": "Here's a challenging semantic retrieval query: \"What kind of inputs should we deliberately fail to validate to ensure our API doesn't accept anything that's not supposed to be there?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.16666666666666666,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_001"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_007",
+            "QA_T_012",
+            "QA_T_006",
+            "QA_T_001",
+            "QA_T_016"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_006",
+            "QA_T_007",
+            "QA_T_016",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_012",
+            "QA_T_007",
+            "QA_T_006",
+            "QA_T_001",
+            "QA_T_016"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_014",
+      "role": "qa_test_engineer",
+      "skill": "Flaky tests",
+      "expected_chunk_id": "QA_T_014",
+      "query": "Here's a challenging semantic retrieval query: \"What approach can help minimize the inconsistency in test results caused by unpredictable delays in the automation process?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires a keyword-only search system to understand the nuances of the query and retrieve the correct result.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 15,
+          "top5": [
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_005",
+            "QA_T_009",
+            "QA_T_010"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_013",
+            "QA_T_014",
+            "QA_T_015",
+            "QA_T_009",
+            "QA_T_010"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 9,
+          "top5": [
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_013",
+            "QA_T_009",
+            "QA_T_010"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 9,
+          "top5": [
+            "QA_T_001",
+            "QA_T_013",
+            "QA_T_009",
+            "QA_T_010",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 5,
+          "top5": [
+            "QA_T_013",
+            "QA_T_001",
+            "QA_T_009",
+            "QA_T_015",
+            "QA_T_014"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_016",
+      "role": "qa_test_engineer",
+      "skill": "OTT entitlement testing",
+      "expected_chunk_id": "QA_T_016",
+      "query": "Here's a challenging semantic retrieval query: \"What types of users should be tested for API playback, and what scenarios should be covered to ensure a comprehensive test suite?\" This query conveys the same technical meaning as the original passage, but uses different wording and synonyms to avoid reusing source terms. It requires the query to understand the nuances of the original passage and apply them to a new context, making it a difficult semantic retrieval query.",
+      "content_word_overlap": 0.17647058823529413,
+      "methods": {
+        "TF-IDF": {
+          "rank": 2,
+          "top5": [
+            "QA_T_006",
+            "QA_T_016",
+            "QA_T_001",
+            "QA_T_005",
+            "QA_T_007"
+          ]
+        },
+        "Embedding": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_015",
+            "QA_T_006"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_006",
+            "QA_T_001",
+            "QA_T_007",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_006",
+            "QA_T_001",
+            "QA_T_007",
+            "QA_T_015"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_016",
+            "QA_T_007",
+            "QA_T_001",
+            "QA_T_006",
+            "QA_T_015"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_017",
+      "role": "qa_test_engineer",
+      "skill": "Manifest validation",
+      "expected_chunk_id": "QA_T_017",
+      "query": "Here's a challenging semantic retrieval query: \"How can we ensure that the media files are properly linked to their corresponding metadata and that the system can accurately determine the quality of the connection between the files and the network?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.125,
+      "methods": {
+        "TF-IDF": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_013",
+            "QA_T_018",
+            "QA_T_001",
+            "QA_T_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_004",
+            "QA_T_017",
+            "QA_T_013",
+            "QA_T_009",
+            "QA_T_019"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_013",
+            "QA_T_018",
+            "QA_T_004",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_013",
+            "QA_T_018",
+            "QA_T_004",
+            "QA_T_009"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 1,
+          "top5": [
+            "QA_T_017",
+            "QA_T_013",
+            "QA_T_004",
+            "QA_T_018",
+            "QA_T_009"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_019",
+      "role": "qa_test_engineer",
+      "skill": "Caption and audio testing",
+      "expected_chunk_id": "QA_T_019",
+      "query": "Here's a challenging semantic retrieval query: \"Ensure that the required media components are properly identified, matched with the content, and can be accessed in a seamless manner.\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reused terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 20,
+          "top5": [
+            "QA_T_009",
+            "QA_T_017",
+            "QA_T_020",
+            "QA_T_001",
+            "QA_T_002"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_004",
+            "QA_T_019",
+            "QA_T_001",
+            "QA_T_013",
+            "QA_T_003"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 5,
+          "top5": [
+            "QA_T_009",
+            "QA_T_017",
+            "QA_T_020",
+            "QA_T_004",
+            "QA_T_019"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 5,
+          "top5": [
+            "QA_T_009",
+            "QA_T_017",
+            "QA_T_004",
+            "QA_T_020",
+            "QA_T_019"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 4,
+          "top5": [
+            "QA_T_004",
+            "QA_T_009",
+            "QA_T_017",
+            "QA_T_019",
+            "QA_T_001"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "HARD_QA_T_021",
+      "role": "qa_test_engineer",
+      "skill": "OTT device matrix",
+      "expected_chunk_id": "QA_T_021",
+      "query": "Here's a challenging semantic retrieval query: \"What types of factors should be considered when designing a system that accommodates various user interfaces and software applications, taking into account the potential for different user experiences and system vulnerabilities?\" This query uses different wording and synonyms to convey the same technical meaning as the original passage, while avoiding reusing source terms and maintaining a natural employee tone.",
+      "content_word_overlap": 0.0,
+      "methods": {
+        "TF-IDF": {
+          "rank": 21,
+          "top5": [
+            "QA_T_004",
+            "QA_T_001",
+            "QA_T_002",
+            "QA_T_003",
+            "QA_T_005"
+          ]
+        },
+        "Embedding": {
+          "rank": 2,
+          "top5": [
+            "QA_T_004",
+            "QA_T_021",
+            "QA_T_009",
+            "QA_T_015",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_75T_25E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_004",
+            "QA_T_021",
+            "QA_T_009",
+            "QA_T_015",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_50T_50E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_004",
+            "QA_T_021",
+            "QA_T_009",
+            "QA_T_015",
+            "QA_T_001"
+          ]
+        },
+        "Hybrid_25T_75E": {
+          "rank": 2,
+          "top5": [
+            "QA_T_004",
+            "QA_T_021",
+            "QA_T_009",
+            "QA_T_015",
+            "QA_T_001"
+          ]
+        }
+      }
+    }
+  ]
+}

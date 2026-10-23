@@ -1,0 +1,422 @@
+[
+  {
+    "case_id": "SEM_BACK_001",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_001",
+    "skill": "API fundamentals",
+    "query": "Can you explain how OpenAPI allows developers to describe the structure and behavior of an HTTP API in a way that's easily understandable by both humans and automated tools?"
+  },
+  {
+    "case_id": "SEM_BACK_005",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_005",
+    "skill": "API contracts",
+    "query": "Can you explain how a versioned API contract helps ensure that the API's behavior is consistent and predictable across different versions?"
+  },
+  {
+    "case_id": "SEM_BACK_008",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_008",
+    "skill": "Input and resource controls",
+    "query": "Can you explain why APIs need to limit the amount of resources they use, and how this helps prevent issues with excessive CPU, memory, or storage usage?"
+  },
+  {
+    "case_id": "SEM_BACK_012",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_012",
+    "skill": "Dockerfile layers",
+    "query": "Can you explain why it's recommended to place stable dependency steps before frequently changing application source in a Dockerfile to improve rebuild efficiency?"
+  },
+  {
+    "case_id": "SEM_BACK_015",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_015",
+    "skill": "API security testing",
+    "query": "Can you explain how security testing should focus on verifying the proper authorization and authentication for specific API endpoints and sequences of requests?"
+  },
+  {
+    "case_id": "SEM_BACK_019",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_019",
+    "skill": "C integer safety",
+    "query": "Can you explain why it's a good idea to consider the potential for signed integer overflow when performing arithmetic operations in code?"
+  },
+  {
+    "case_id": "SEM_BACK_022",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_022",
+    "skill": "C++ ownership",
+    "query": "Can you explain why it's recommended to use scoped objects and standard smart pointers instead of raw owning pointers in modern C++?"
+  },
+  {
+    "case_id": "SEM_BACK_026",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_026",
+    "skill": "Python data structures",
+    "query": "What are the key characteristics of Python's data structures that help determine which one to use for a specific application?"
+  },
+  {
+    "case_id": "SEM_BACK_029",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_029",
+    "skill": "Python mutability",
+    "query": "What are some strategies for identifying and avoiding the use of mutable objects in Python code to prevent unintended behavior?"
+  },
+  {
+    "case_id": "SEM_BACK_033",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_033",
+    "skill": "Go interfaces",
+    "query": "Can you explain how a Go type automatically meets the requirements of an interface when it implements its methods?"
+  },
+  {
+    "case_id": "SEM_BACK_036",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_036",
+    "skill": "OTT playback API design",
+    "query": "Can you explain how the OTT playback API should balance providing necessary information to the client with hiding internal implementation details?"
+  },
+  {
+    "case_id": "SEM_BACK_040",
+    "role": "backend_software_engineer",
+    "expected_chunk_id": "BACK_040",
+    "skill": "Playback session resilience",
+    "query": "Can you explain the importance of using stable contracts and meaningful error types in playback session resilience to ensure reliable playback services?"
+  },
+  {
+    "case_id": "SEM_DATA_001",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_001",
+    "skill": "DAG concept",
+    "query": "What is the purpose of defining a workflow as a collection of discrete units that are executed by workers in an Airflow DAG?"
+  },
+  {
+    "case_id": "SEM_DATA_003",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_003",
+    "skill": "Task isolation",
+    "query": "Can you explain why task communication in Airflow should rely on supported mechanisms rather than assuming access to local memory on different machines?"
+  },
+  {
+    "case_id": "SEM_DATA_004",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_004",
+    "skill": "XCom purpose",
+    "query": "Can you explain how XComs facilitate data exchange between task instances in a DAG run?"
+  },
+  {
+    "case_id": "SEM_DATA_006",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_006",
+    "skill": "Scheduling",
+    "query": "What are the key considerations for scheduling workflow runs in a data interval and logical date context for incremental loads?"
+  },
+  {
+    "case_id": "SEM_DATA_008",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_008",
+    "skill": "Failure handling",
+    "query": "Can you explain why pipelines should be designed to handle failures and incomplete data, rather than just ignoring them?"
+  },
+  {
+    "case_id": "SEM_DATA_010",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_010",
+    "skill": "Database access",
+    "query": "Can you explain how parameterized statements in Python sqlite3 ensure the security and integrity of user input when executing SQL queries?"
+  },
+  {
+    "case_id": "SEM_DATA_011",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_011",
+    "skill": "Data validation",
+    "query": "Can you explain the importance of data-quality checks in a pipeline, specifically what types of checks are included and why they're necessary?"
+  },
+  {
+    "case_id": "SEM_DATA_013",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_013",
+    "skill": "Backfills",
+    "query": "Can you explain the importance of using partition-aware, idempotent logic in backfills to prevent data duplication or overwrite issues?"
+  },
+  {
+    "case_id": "SEM_DATA_015",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_015",
+    "skill": "Pipeline alerts",
+    "query": "Can you explain how pipeline alerts should be designed to detect and respond to specific issues such as repeated failures, missing completions, or breached latency thresholds?"
+  },
+  {
+    "case_id": "SEM_DATA_017",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_017",
+    "skill": "Series and episode mapping",
+    "query": "Can you explain how stable identifiers and explicit season and episode relationships help prevent duplicate content and keep episodes in their correct hierarchy during series migrations?"
+  },
+  {
+    "case_id": "SEM_DATA_018",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_018",
+    "skill": "OTT event pipelines",
+    "query": "Can you explain how the schema, keys, ordering requirements, and replay behavior are defined for playback and content events when publishing to Kafka topics?"
+  },
+  {
+    "case_id": "SEM_DATA_020",
+    "role": "data_engineer",
+    "expected_chunk_id": "DATA_020",
+    "skill": "Metadata migration reconciliation",
+    "query": "Can you explain the importance of reconciling metadata differences between the source and target systems during data migration?"
+  },
+  {
+    "case_id": "SEM_DEVO_001",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_001",
+    "skill": "Deployments",
+    "query": "Can you explain how a Kubernetes Deployment works to ensure that updates to a stateless workload are handled smoothly?"
+  },
+  {
+    "case_id": "SEM_DEVO_003",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_003",
+    "skill": "Services",
+    "query": "Can you explain how a Kubernetes Service provides a stable interface for a network application, even when the underlying Pods change?"
+  },
+  {
+    "case_id": "SEM_DEVO_004",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_004",
+    "skill": "ConfigMaps",
+    "query": "Can you explain how ConfigMaps help manage environment-specific configuration in a containerized application?"
+  },
+  {
+    "case_id": "SEM_DEVO_006",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_006",
+    "skill": "Secret access",
+    "query": "Can you explain why least-privilege access control is considered a crucial aspect of secret safety in a DevOps and SRE context?"
+  },
+  {
+    "case_id": "SEM_DEVO_008",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_008",
+    "skill": "Dockerfile purpose",
+    "query": "Can you explain the main difference between a Dockerfile and a Compose file in terms of their purpose and functionality?"
+  },
+  {
+    "case_id": "SEM_DEVO_010",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_010",
+    "skill": "Compose diagnosis",
+    "query": "Can you explain how to diagnose issues with a Compose stack, specifically what steps to take when a service is running and what logs or commands would be most helpful to investigate?"
+  },
+  {
+    "case_id": "SEM_DEVO_011",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_011",
+    "skill": "Time-series model",
+    "query": "Can you explain how Prometheus stores and organizes its data as time-series values with metric names and labels?"
+  },
+  {
+    "case_id": "SEM_DEVO_013",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_013",
+    "skill": "Alerting rules",
+    "query": "Can you explain how Prometheus alerting rules work, specifically how they evaluate expressions over time series to create active alerts?"
+  },
+  {
+    "case_id": "SEM_DEVO_015",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_015",
+    "skill": "Operational resilience",
+    "query": "Can you explain the importance of having a rollback path in place during a rollout to ensure operational resilience?"
+  },
+  {
+    "case_id": "SEM_DEVO_017",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_017",
+    "skill": "OTT alert design",
+    "query": "Can you explain how the design of OTT alerts should balance providing specific service, region, and runbook context with the need to avoid including unbounded viewer identifiers?"
+  },
+  {
+    "case_id": "SEM_DEVO_018",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_018",
+    "skill": "Media workload rollout",
+    "query": "Can you explain why media-service rollouts require a combination of readiness checks, capacity observation, progressive exposure, and a rollback path to ensure a healthy process doesn't produce playback-impacting responses?"
+  },
+  {
+    "case_id": "SEM_DEVO_020",
+    "role": "devops_sre_engineer",
+    "expected_chunk_id": "DEVO_020",
+    "skill": "Streaming incident triage",
+    "query": "Can you explain how the triage process should incorporate correlation between player symptoms and various system signals, such as API, manifest, CDN, and origin, to identify the underlying cause of an incident?"
+  },
+  {
+    "case_id": "SEM_FRON_001",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_001",
+    "skill": "Semantic HTML",
+    "query": "What is the purpose of using the HTML element that provides built-in semantics and accessibility support to browsers and assistive technologies?"
+  },
+  {
+    "case_id": "SEM_FRON_003",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_003",
+    "skill": "Image alternatives",
+    "query": "What is the recommended approach for providing text alternatives for images that are primarily used for decoration versus those that convey meaningful information?"
+  },
+  {
+    "case_id": "SEM_FRON_004",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_004",
+    "skill": "Keyboard access",
+    "query": "Can you explain how interactive functionality should be designed to be accessible with a keyboard, ensuring that users can navigate through the interface logically?"
+  },
+  {
+    "case_id": "SEM_FRON_006",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_006",
+    "skill": "ARIA use",
+    "query": "Can you explain when it's appropriate to use ARIA attributes to enhance the accessibility of custom widgets, and when a native HTML element should be used instead?"
+  },
+  {
+    "case_id": "SEM_FRON_008",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_008",
+    "skill": "Contrast",
+    "query": "What are the specific contrast ratio requirements for normal and large text according to WCAG 2.2 Level AA guidelines?"
+  },
+  {
+    "case_id": "SEM_FRON_009",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_009",
+    "skill": "Focus order",
+    "query": "Can you explain how the order in which focusable components receive focus should be determined to ensure that it aligns with the intended meaning and usability of the navigation sequence?"
+  },
+  {
+    "case_id": "SEM_FRON_011",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_011",
+    "skill": "CSS accessibility",
+    "query": "Can you explain why it's a good practice to preserve meaningful focus indicators and essential information through color in CSS, rather than removing them?"
+  },
+  {
+    "case_id": "SEM_FRON_012",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_012",
+    "skill": "JavaScript accessibility",
+    "query": "Can you explain how custom JavaScript controls should be designed to provide accurate accessibility features when they replace native elements?"
+  },
+  {
+    "case_id": "SEM_FRON_014",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_014",
+    "skill": "Plain language",
+    "query": "What does it mean for a website to have clear link text and understandable instructions that cater to people with different cognitive and language needs?"
+  },
+  {
+    "case_id": "SEM_FRON_016",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_016",
+    "skill": "Accessible video controls",
+    "query": "Can you explain how OTT player controls, such as play, pause, and seek, should be designed to be accessible for users with disabilities?"
+  },
+  {
+    "case_id": "SEM_FRON_017",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_017",
+    "skill": "Caption selection UI",
+    "query": "Can you explain how the caption and subtitle tracks are displayed to ensure they are easily accessible and understandable for users?"
+  },
+  {
+    "case_id": "SEM_FRON_019",
+    "role": "frontend_ui_developer",
+    "expected_chunk_id": "FRON_019",
+    "skill": "Responsive OTT player",
+    "query": "Can you explain how the video player's controls should be designed to stay accessible and usable when the screen is very narrow?"
+  },
+  {
+    "case_id": "SEM_QA_T_001",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_001",
+    "skill": "Test assertions",
+    "query": "Can you explain the purpose of a matcher in a test assertion and how it relates to verifying a specific requirement?"
+  },
+  {
+    "case_id": "SEM_QA_T_003",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_003",
+    "skill": "Locators",
+    "query": "Can you explain how Playwright locators help with interactions and assertions in a test scenario?"
+  },
+  {
+    "case_id": "SEM_QA_T_005",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_005",
+    "skill": "Test isolation",
+    "query": "Can you explain why tests should be designed to maintain their own state independently of other tests?"
+  },
+  {
+    "case_id": "SEM_QA_T_006",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_006",
+    "skill": "API testing",
+    "query": "Can we use Playwright to test server behavior by making direct REST API calls to validate server-side postconditions?"
+  },
+  {
+    "case_id": "SEM_QA_T_008",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_008",
+    "skill": "Fixtures",
+    "query": "Can you explain how pytest fixtures are used to make tests more efficient by providing reusable setup data or services?"
+  },
+  {
+    "case_id": "SEM_QA_T_010",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_010",
+    "skill": "Fixture teardown",
+    "query": "Can you explain how yield fixtures can ensure that resources are released even when test logic fails?"
+  },
+  {
+    "case_id": "SEM_QA_T_012",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_012",
+    "skill": "Negative testing",
+    "query": "Can you explain how the API tests should handle cases where the identifier is invalid, the user is unauthorized, the input is malformed, or the limit boundaries are exceeded?"
+  },
+  {
+    "case_id": "SEM_QA_T_014",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_014",
+    "skill": "Flaky tests",
+    "query": "Can you explain how using observable conditions and resilient locators can help minimize the timing-related issues that cause flaky tests in our application?"
+  },
+  {
+    "case_id": "SEM_QA_T_016",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_016",
+    "skill": "OTT entitlement testing",
+    "query": "Can you explain how the playback API tests should cover different scenarios for entitled and non-entitled users, as well as other edge cases mentioned in the passage?"
+  },
+  {
+    "case_id": "SEM_QA_T_017",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_017",
+    "skill": "Manifest validation",
+    "query": "Can you explain how HLS validation ensures that the media files and metadata are correctly formatted and consistent across different renditions and segments?"
+  },
+  {
+    "case_id": "SEM_QA_T_019",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_019",
+    "skill": "Caption and audio testing",
+    "query": "Can you explain what it means for the audio, subtitle, and caption tracks to be synchronized with the programme in the context of OTT testing?"
+  },
+  {
+    "case_id": "SEM_QA_T_021",
+    "role": "qa_test_engineer",
+    "expected_chunk_id": "QA_T_021",
+    "skill": "OTT device matrix",
+    "query": "Can you explain why an OTT device matrix should prioritize representative browsers, operating systems, screen sizes, and playback capabilities over exhaustive testing of every possible device combination?"
+  }
+]

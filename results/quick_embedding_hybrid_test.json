@@ -1,0 +1,487 @@
+{
+  "model": "nomic-embed-text",
+  "test_case_count": 15,
+  "metrics": {
+    "TF-IDF": {
+      "Hit@1": 0.4,
+      "Hit@3": 0.7333333333333333,
+      "Hit@5": 0.8,
+      "MRR@5": 0.5466666666666666,
+      "Miss@5": 0.2
+    },
+    "Embedding": {
+      "Hit@1": 0.5333333333333333,
+      "Hit@3": 0.7333333333333333,
+      "Hit@5": 1.0,
+      "MRR@5": 0.6888888888888889,
+      "Miss@5": 0.0
+    },
+    "Hybrid": {
+      "Hit@1": 0.4666666666666667,
+      "Hit@3": 0.8,
+      "Hit@5": 0.9333333333333333,
+      "MRR@5": 0.6522222222222223,
+      "Miss@5": 0.06666666666666667
+    }
+  },
+  "ranks": {
+    "TF-IDF": [
+      9,
+      3,
+      1,
+      3,
+      3,
+      2,
+      1,
+      1,
+      16,
+      1,
+      1,
+      5,
+      2,
+      1,
+      13
+    ],
+    "Embedding": [
+      4,
+      1,
+      2,
+      1,
+      1,
+      4,
+      1,
+      1,
+      2,
+      1,
+      3,
+      1,
+      4,
+      4,
+      1
+    ],
+    "Hybrid": [
+      7,
+      2,
+      1,
+      2,
+      1,
+      3,
+      1,
+      1,
+      4,
+      1,
+      1,
+      2,
+      2,
+      1,
+      5
+    ]
+  },
+  "cases": [
+    {
+      "expected": "BACK_006",
+      "tfidf_rank": 9,
+      "embedding_rank": 4,
+      "hybrid_rank": 7,
+      "tfidf_top5": [
+        "BACK_019",
+        "BACK_023",
+        "BACK_027",
+        "BACK_001",
+        "BACK_002"
+      ],
+      "embedding_top5": [
+        "BACK_037",
+        "BACK_040",
+        "BACK_008",
+        "BACK_006",
+        "BACK_015"
+      ],
+      "hybrid_top5": [
+        "BACK_019",
+        "BACK_023",
+        "BACK_027",
+        "BACK_037",
+        "BACK_040"
+      ]
+    },
+    {
+      "expected": "BACK_010",
+      "tfidf_rank": 3,
+      "embedding_rank": 1,
+      "hybrid_rank": 2,
+      "tfidf_top5": [
+        "BACK_014",
+        "BACK_038",
+        "BACK_010",
+        "BACK_012",
+        "BACK_001"
+      ],
+      "embedding_top5": [
+        "BACK_010",
+        "BACK_007",
+        "BACK_015",
+        "BACK_014",
+        "BACK_004"
+      ],
+      "hybrid_top5": [
+        "BACK_014",
+        "BACK_010",
+        "BACK_038",
+        "BACK_007",
+        "BACK_012"
+      ]
+    },
+    {
+      "expected": "BACK_020",
+      "tfidf_rank": 1,
+      "embedding_rank": 2,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "BACK_020",
+        "BACK_032",
+        "BACK_031",
+        "BACK_028",
+        "BACK_016"
+      ],
+      "embedding_top5": [
+        "BACK_016",
+        "BACK_020",
+        "BACK_032",
+        "BACK_014",
+        "BACK_027"
+      ],
+      "hybrid_top5": [
+        "BACK_020",
+        "BACK_032",
+        "BACK_016",
+        "BACK_028",
+        "BACK_031"
+      ]
+    },
+    {
+      "expected": "FRON_003",
+      "tfidf_rank": 3,
+      "embedding_rank": 1,
+      "hybrid_rank": 2,
+      "tfidf_top5": [
+        "FRON_015",
+        "FRON_009",
+        "FRON_003",
+        "FRON_005",
+        "FRON_001"
+      ],
+      "embedding_top5": [
+        "FRON_003",
+        "FRON_017",
+        "FRON_015",
+        "FRON_018",
+        "FRON_005"
+      ],
+      "hybrid_top5": [
+        "FRON_015",
+        "FRON_003",
+        "FRON_005",
+        "FRON_009",
+        "FRON_017"
+      ]
+    },
+    {
+      "expected": "FRON_004",
+      "tfidf_rank": 3,
+      "embedding_rank": 1,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "FRON_009",
+        "FRON_010",
+        "FRON_004",
+        "FRON_014",
+        "FRON_018"
+      ],
+      "embedding_top5": [
+        "FRON_004",
+        "FRON_015",
+        "FRON_016",
+        "FRON_019",
+        "FRON_010"
+      ],
+      "hybrid_top5": [
+        "FRON_004",
+        "FRON_009",
+        "FRON_010",
+        "FRON_014",
+        "FRON_018"
+      ]
+    },
+    {
+      "expected": "FRON_007",
+      "tfidf_rank": 2,
+      "embedding_rank": 4,
+      "hybrid_rank": 3,
+      "tfidf_top5": [
+        "FRON_015",
+        "FRON_007",
+        "FRON_005",
+        "FRON_010",
+        "FRON_001"
+      ],
+      "embedding_top5": [
+        "FRON_010",
+        "FRON_018",
+        "FRON_015",
+        "FRON_007",
+        "FRON_005"
+      ],
+      "hybrid_top5": [
+        "FRON_015",
+        "FRON_010",
+        "FRON_007",
+        "FRON_005",
+        "FRON_018"
+      ]
+    },
+    {
+      "expected": "DEVO_003",
+      "tfidf_rank": 1,
+      "embedding_rank": 1,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "DEVO_003",
+        "DEVO_001",
+        "DEVO_009",
+        "DEVO_018",
+        "DEVO_002"
+      ],
+      "embedding_top5": [
+        "DEVO_003",
+        "DEVO_001",
+        "DEVO_009",
+        "DEVO_007",
+        "DEVO_020"
+      ],
+      "hybrid_top5": [
+        "DEVO_003",
+        "DEVO_001",
+        "DEVO_009",
+        "DEVO_018",
+        "DEVO_007"
+      ]
+    },
+    {
+      "expected": "DEVO_005",
+      "tfidf_rank": 1,
+      "embedding_rank": 1,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "DEVO_005",
+        "DEVO_007",
+        "DEVO_003",
+        "DEVO_001",
+        "DEVO_004"
+      ],
+      "embedding_top5": [
+        "DEVO_005",
+        "DEVO_019",
+        "DEVO_004",
+        "DEVO_001",
+        "DEVO_006"
+      ],
+      "hybrid_top5": [
+        "DEVO_005",
+        "DEVO_007",
+        "DEVO_004",
+        "DEVO_001",
+        "DEVO_003"
+      ]
+    },
+    {
+      "expected": "DEVO_013",
+      "tfidf_rank": 16,
+      "embedding_rank": 2,
+      "hybrid_rank": 4,
+      "tfidf_top5": [
+        "DEVO_014",
+        "DEVO_016",
+        "DEVO_017",
+        "DEVO_001",
+        "DEVO_002"
+      ],
+      "embedding_top5": [
+        "DEVO_014",
+        "DEVO_013",
+        "DEVO_016",
+        "DEVO_017",
+        "DEVO_020"
+      ],
+      "hybrid_top5": [
+        "DEVO_014",
+        "DEVO_016",
+        "DEVO_017",
+        "DEVO_013",
+        "DEVO_020"
+      ]
+    },
+    {
+      "expected": "QA_T_004",
+      "tfidf_rank": 1,
+      "embedding_rank": 1,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "QA_T_004",
+        "QA_T_001",
+        "QA_T_002",
+        "QA_T_003",
+        "QA_T_005"
+      ],
+      "embedding_top5": [
+        "QA_T_004",
+        "QA_T_002",
+        "QA_T_009",
+        "QA_T_015",
+        "QA_T_017"
+      ],
+      "hybrid_top5": [
+        "QA_T_004",
+        "QA_T_002",
+        "QA_T_009",
+        "QA_T_015",
+        "QA_T_017"
+      ]
+    },
+    {
+      "expected": "QA_T_010",
+      "tfidf_rank": 1,
+      "embedding_rank": 3,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "QA_T_010",
+        "QA_T_001",
+        "QA_T_006",
+        "QA_T_005",
+        "QA_T_011"
+      ],
+      "embedding_top5": [
+        "QA_T_005",
+        "QA_T_016",
+        "QA_T_010",
+        "QA_T_013",
+        "QA_T_014"
+      ],
+      "hybrid_top5": [
+        "QA_T_010",
+        "QA_T_006",
+        "QA_T_001",
+        "QA_T_005",
+        "QA_T_013"
+      ]
+    },
+    {
+      "expected": "QA_T_014",
+      "tfidf_rank": 5,
+      "embedding_rank": 1,
+      "hybrid_rank": 2,
+      "tfidf_top5": [
+        "QA_T_005",
+        "QA_T_002",
+        "QA_T_008",
+        "QA_T_007",
+        "QA_T_014"
+      ],
+      "embedding_top5": [
+        "QA_T_014",
+        "QA_T_012",
+        "QA_T_002",
+        "QA_T_013",
+        "QA_T_005"
+      ],
+      "hybrid_top5": [
+        "QA_T_005",
+        "QA_T_014",
+        "QA_T_002",
+        "QA_T_012",
+        "QA_T_007"
+      ]
+    },
+    {
+      "expected": "DATA_004",
+      "tfidf_rank": 2,
+      "embedding_rank": 4,
+      "hybrid_rank": 2,
+      "tfidf_top5": [
+        "DATA_003",
+        "DATA_004",
+        "DATA_001",
+        "DATA_002",
+        "DATA_012"
+      ],
+      "embedding_top5": [
+        "DATA_003",
+        "DATA_001",
+        "DATA_007",
+        "DATA_004",
+        "DATA_006"
+      ],
+      "hybrid_top5": [
+        "DATA_003",
+        "DATA_004",
+        "DATA_001",
+        "DATA_002",
+        "DATA_012"
+      ]
+    },
+    {
+      "expected": "DATA_007",
+      "tfidf_rank": 1,
+      "embedding_rank": 4,
+      "hybrid_rank": 1,
+      "tfidf_top5": [
+        "DATA_007",
+        "DATA_015",
+        "DATA_004",
+        "DATA_020",
+        "DATA_017"
+      ],
+      "embedding_top5": [
+        "DATA_008",
+        "DATA_014",
+        "DATA_015",
+        "DATA_007",
+        "DATA_019"
+      ],
+      "hybrid_top5": [
+        "DATA_007",
+        "DATA_015",
+        "DATA_014",
+        "DATA_020",
+        "DATA_019"
+      ]
+    },
+    {
+      "expected": "DATA_012",
+      "tfidf_rank": 13,
+      "embedding_rank": 1,
+      "hybrid_rank": 5,
+      "tfidf_top5": [
+        "DATA_007",
+        "DATA_001",
+        "DATA_005",
+        "DATA_014",
+        "DATA_003"
+      ],
+      "embedding_top5": [
+        "DATA_012",
+        "DATA_014",
+        "DATA_019",
+        "DATA_011",
+        "DATA_002"
+      ],
+      "hybrid_top5": [
+        "DATA_007",
+        "DATA_014",
+        "DATA_001",
+        "DATA_005",
+        "DATA_012"
+      ]
+    }
+  ]
+}
