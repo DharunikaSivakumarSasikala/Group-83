@@ -1,4 +1,4 @@
-# SkillScope AI v4 — Group 83
+# SkillScope AI — Group 83
 
 **Work Integrated Learning Project | RMIT University | Group 83**
 
